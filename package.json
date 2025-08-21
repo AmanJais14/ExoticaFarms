@@ -1,0 +1,35 @@
+{
+  "name": "landing-page-react",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "analyze": "ANALYZE=true npm run build",
+    "perf": "npm run build && npm run start",
+    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html --chrome-flags=\"--headless\"",
+    "web-vitals": "npm run build && npm run start & sleep 5 && lighthouse http://localhost:3000 --only-categories=performance --output=json --output-path=./web-vitals.json"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^15.5.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "firebase": "^12.1.0",
+    "lucide-react": "^0.539.0",
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.1",
+    "sharp": "^0.34.3",
+    "web-vitals": "^5.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "^9.33.0",
+    "eslint-config-next": "^15.4.6",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.4.10"
+  }
+}
