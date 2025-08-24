@@ -140,7 +140,7 @@ const AuthoritySignals = () => {
                 </div>
                 
                 <blockquote className="text-gray-700 mb-4 italic">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
                 
                 <div className="border-t pt-4">
