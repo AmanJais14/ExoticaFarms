@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Leaf, Globe, TrendingUp } from 'lucide-react';
 // Use public path for Next.js compatibility
 const exports = '/assets/exports.jpg';
@@ -67,9 +68,11 @@ const OurVision = () => {
                 >
                   {/* Card Image */}
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={card.image}
                       alt={card.title}
+                      width={400}
+                      height={192}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { TrendingUp, ShoppingCart, Truck, Globe } from 'lucide-react';
 // Use public paths for Next.js compatibility
 const zepto = '/assets/saleschannel/zepto.png';
@@ -109,7 +110,7 @@ const SalesChannel = () => {
             Our Sales <span className="gradient-text">Channels</span>
           </h2>
           <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto leading-relaxed">
-            Premium exotic fruits delivered through India's leading platforms.
+            Premium exotic fruits delivered through India&apos;s leading platforms.
           </p>
         </div>
 
@@ -123,9 +124,11 @@ const SalesChannel = () => {
                   className="group transition-all duration-300 hover:scale-110 animate-fade-in"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <img
+                  <Image
                     src={channel.logo}
                     alt={`${channel.name} logo`}
+                    width={112}
+                    height={56}
                     className="h-10 w-20 sm:h-12 sm:w-24 md:h-14 md:w-28 object-contain group-hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
