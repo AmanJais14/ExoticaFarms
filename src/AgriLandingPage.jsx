@@ -1441,7 +1441,14 @@ const AgriLandingPage = () => {
                     <span className="gradient-text"> Information</span>
                   </h3>
                   <div className="space-y-4 sm:space-y-6">
-                    <div className="card-premium group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-lg border border-neutral-100 hover:shadow-premium transition-all duration-300">
+                    <div
+                      onClick={() => {
+                        const message = "Hi! I'm interested in learning more about your agricultural investment opportunities. Could you please provide more details?";
+                        const whatsappUrl = `https://wa.me/919379627377?text=${encodeURIComponent(message)}`;
+                        window.open(whatsappUrl, '_blank');
+                      }}
+                      className="card-premium group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-lg border border-neutral-100 hover:shadow-premium transition-all duration-300 cursor-pointer hover:bg-green-50"
+                    >
                       <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <MessageCircle className="w-6 h-6 text-white" />
                       </div>
@@ -1449,11 +1456,11 @@ const AgriLandingPage = () => {
                         <p className="font-bold text-neutral-800 text-sm mb-1">
                           Call/WhatsApp
                         </p>
-                        <p className="text-neutral-600 text-sm">
+                        <p className="text-green-600 text-sm font-semibold hover:text-green-700 transition-colors duration-300">
                           +91 9379627377
                         </p>
                         <p className="text-neutral-500 text-xs">
-                          Available 24/7
+                          Available 24/7 • Click to message
                         </p>
                       </div>
                     </div>

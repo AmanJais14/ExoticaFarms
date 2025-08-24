@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen, ArrowRight } from 'lucide-react';
 import { getPostById, getAllPosts } from '../../data/blogData';
 import BlogNavbar from './BlogNavbarNextjs';
 import BlogHeroSection from './BlogHeroSectionNextjs';
@@ -164,14 +164,14 @@ const BlogPost = ({ params }) => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Exotica Farms",
+      "name": "Exora Farms",
       "logo": {
         "@type": "ImageObject",
         "url": "https://exoticafarming.com/assets/logo.png"
       }
     },
-    "datePublished": post.publishDate,
-    "dateModified": post.publishDate,
+    "datePublished": post.date,
+    "dateModified": post.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `https://exoticfarming.com/blog/${post.id}`
@@ -182,7 +182,7 @@ const BlogPost = ({ params }) => {
     "inLanguage": "en-US",
     "isPartOf": {
       "@type": "Blog",
-      "name": "Exotica Farms Blog",
+      "name": "Exora Farms Blog",
       "url": "https://exoticafarming.com/blog"
     }
   }
@@ -252,7 +252,7 @@ const BlogPost = ({ params }) => {
               <div className="flex flex-wrap items-center gap-6 text-green-500 mb-8">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
-                  <span className="font-medium">{formatDate(post.publishDate)}</span>
+                  <span className="font-medium">{formatDate(post.date)}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5" />
@@ -304,6 +304,25 @@ const BlogPost = ({ params }) => {
                     ))}
                   </div>
                 </div>
+
+                {/* CTA Section */}
+                <div className="mt-12 pt-8 border-t border-green-200">
+                  <div className="text-center bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
+                    <h3 className="text-2xl font-bold text-green-900 mb-4">
+                      Ready to Start Your Agricultural Investment Journey?
+                    </h3>
+                    {/* <p className="text-green-700 mb-6 max-w-2xl mx-auto">
+                      Join thousands of investors who are already earning tax-free returns through our managed farmland investment opportunities. Start building your agricultural portfolio today.
+                    </p> */}
+                    <button
+                      onClick={() => router.push('/')}
+                      className="inline-flex text-xs items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                    >
+                      <span>Invest With Us</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -340,7 +359,7 @@ const BlogPost = ({ params }) => {
                         <div className="flex items-center gap-3 text-xs text-green-500">
                           <div className="flex items-center gap-1">
                             <Calendar className="w-3 h-3" />
-                            <span>{formatDate(relatedPost.publishDate)}</span>
+                            <span>{formatDate(relatedPost.date)}</span>
                           </div>
                           <div className="flex items-center gap-1">
                             <Clock className="w-3 h-3" />

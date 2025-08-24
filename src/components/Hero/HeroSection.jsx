@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Globe,ChevronDown, Users, TrendingUp, Shield, Calendar, ArrowRight, Play, BarChart3 ,Rocket} from 'lucide-react';
 // import farm from '../../assets/hero/farm5.jpg';
 const farm = '/assets/hero/farm5.jpg';
+const farm1 = '/assets/hero/farm4.jpg';
+const farm2 = '/assets/hero/farm2.jpg';
+
+// Background images array for slideshow
+const backgroundImages = [farm, farm1, ];
 
 const HeroSection = ({
   scrollY,
@@ -9,18 +14,43 @@ const HeroSection = ({
   setActiveCard,
   counters
 }) => {
+  // Slideshow state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Auto-advance slideshow
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div
-      className="relative h-[102vh] bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900 overflow-hidden pt-16 sm:pt-20"
-      style={{
-        backgroundImage: `url(${farm})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundBlendMode: 'overlay',
-        transform: `translateY(${scrollY * 0.5}px)` // Parallax effect
-      }}
-    >
+    <div className="relative h-[102vh] bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900 overflow-hidden pt-16 sm:pt-20">
+      {/* Background Image Slideshow */}
+      {backgroundImages.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundBlendMode: 'overlay',
+            transform: `translateY(${scrollY * 0.5}px)` // Parallax effect
+          }}
+        />
+      ))}
+
+      {/* Gradient Overlay */}
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-primary-800/70 via-primary-700/60 to-primary-900/70"></div> */}
+      {/* <div className="absolute inset-0 bg-black/10 group-hover:bg-black/10 transition-all duration-300"></div> */}
 
 
       {/* Premium Floating Elements */}
@@ -42,7 +72,7 @@ const HeroSection = ({
 
 
             {/* Main Headline */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-black text-white mb-3 sm:mb-4 leading-tight tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-black text-white mb-3 sm:mb-4 leading-tight tracking-normal ">
               Invest in Exotic Farming<span className="gradient-text-hero text-yellow-400"></span>
             </h1>
             {/* Premium Badge */}
@@ -78,7 +108,7 @@ const HeroSection = ({
             <div className="mt-6 sm:mt-12 md:mt-28 max-w-4xl mx-auto animate-fade-in delay-1000 px-4 md:px-0">
               {/* Mobile: Centered smaller cards, Tablet & Desktop: Grid */}
               <div className="flex flex-col md:grid md:grid-cols-4 gap-1.5 md:gap-4 items-center md:items-stretch max-w-xs md:max-w-none mx-auto">
-              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20 relative overflow-hidden">
+              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-xs rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20 relative overflow-hidden">
                 {/* Tax Free Ticker */}
                 <div className="absolute top-0 right-0 text-black bg-white/70 text-[0.5rem] font-bold px-1.5 md:px-2 py-0.5 md:py-1 rounded-bl-lg animate-pulse overflow-hidden">
                   TAX FREE
@@ -90,11 +120,11 @@ const HeroSection = ({
                   </div> */}
                   <div className="flex-1 min-w-0">
                     <div className="text-xs md:text-base font-bold text-white leading-tight">12-18%*</div>
-                    <div className="text-xs text-white/80 leading-tight">Annual Dividends</div>
+                    <div className="text-xs text-white/80 leading-tight">Dividends (Y3+)</div>
                   </div>
                 </div>
               </div>
-              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20">
+              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-xs rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20">
                 <div className="flex items-center gap-1.5 md:gap-3 h-full">
                   {/* <div className="w-6 md:w-10 h-6 md:h-10 bg-white rounded-sm md:rounded-lg flex items-center justify-center flex-shrink-0">
                     <BarChart3 className="w-3 md:w-5 h-3 md:h-5 text-green-700" />
@@ -106,7 +136,7 @@ const HeroSection = ({
                 </div>
               </div>
 
-              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20">
+              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-xs rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20">
                 <div className="flex items-center gap-1.5 md:gap-3 h-full">
                   {/* <div className="w-6 md:w-10 h-6 md:h-10 bg-white/70 rounded-sm md:rounded-lg flex items-center justify-center flex-shrink-0">
                     <Users className="w-3 md:w-5 h-3 md:h-5 text-green-700" />
@@ -118,15 +148,15 @@ const HeroSection = ({
                 </div>
               </div>
 
-              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20">
+              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-xs rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20">
                 <div className="flex items-center gap-1.5 md:gap-3 h-full">
                   {/* <div className="w-6 md:w-10 h-6 md:h-10 bg-white rounded-sm md:rounded-lg flex items-center justify-center flex-shrink-0">
                     <Rocket className="w-3 md:w-5 h-3 md:h-5 text-green-700" />
                   </div> */}
 
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs md:text-base font-bold text-white leading-tight">20+ Years</div>
-                    <div className="text-xs text-white/80 leading-tight">Agri, RE Experience</div>
+                    <div className="text-xs md:text-base font-bold text-white leading-tight">20+ Years Exp.</div>
+                    <div className="text-xs text-white/80 leading-tight">Agri & Real Estate</div>
                   </div>
                 </div>
               </div>
@@ -293,7 +323,23 @@ const HeroSection = ({
           </div>
         </div>
       </div> */}
-    // </div>
+
+      {/* Slideshow Indicators */}
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+        {backgroundImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImageIndex(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentImageIndex
+                ? 'bg-white scale-110 shadow-lg'
+                : 'bg-white/50 hover:bg-white/70'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div> */}
+    </div>
   );
 };
 

@@ -43,7 +43,7 @@ const AuthoritySignals = () => {
       location: "Bangalore",
       investment: "₹50 Lakhs",
       returns: "16.5% Annual Return",
-      quote: "Exotica Farms has consistently delivered on their promises. The quarterly dividends are always on time, and the transparency in operations gives me complete confidence.",
+      quote: "Exora Farms has consistently delivered on their promises. The quarterly dividends are always on time, and the transparency in operations gives me complete confidence.",
       rating: 5
     },
     {

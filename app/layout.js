@@ -8,10 +8,10 @@ export const viewport = {
 
 export const metadata = {
   title: {
-    default: 'Exotica Farms - Premium Agricultural Real Estate Investment | 12-18% Annual Returns',
-    template: '%s | Exotica Farms'
+    default: 'Exora Farms - Premium Agricultural Real Estate Investment | 12-18% Annual Returns',
+    template: '%s | Exora Farms'
   },
-  description: 'Invest in premium agricultural real estate with Exotica Farms. Get 12-18% annual dividends from exotic farming projects. Tax-free returns, professional management, and sustainable farming practices. Starting at ₹29.9L per acre.',
+  description: 'Invest in premium agricultural real estate with Exora Farms. Get 12-18% annual dividends from exotic farming projects. Tax-free returns, professional management, and sustainable farming practices. Starting at ₹29.9L per acre.',
   keywords: [
     'agricultural real estate investment',
     'farm investment opportunities',
@@ -26,9 +26,9 @@ export const metadata = {
     'farm investment schemes',
     'agricultural property investment'
   ].join(', '),
-  authors: [{ name: 'Exotica Farms', url: 'https://exoticafarming.com' }],
-  creator: 'Exotica Farms',
-  publisher: 'Exotica Farms',
+  authors: [{ name: 'Exora Farms', url: 'https://exoticafarming.com' }],
+  creator: 'Exora Farms',
+  publisher: 'Exora Farms',
   formatDetection: {
     email: false,
     address: false,
@@ -39,24 +39,24 @@ export const metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Exotica Farms - Premium Agricultural Real Estate Investment',
+    title: 'Exora Farms - Premium Agricultural Real Estate Investment',
     description: 'Invest in premium agricultural real estate with guaranteed 12-18% annual returns. Professional management, sustainable farming, tax-free dividends.',
     type: 'website',
     locale: 'en_US',
     url: 'https://exoticafarming.com',
-    siteName: 'Exotica Farms',
+    siteName: 'Exora Farms',
     images: [
       {
         url: '/assets/hero/farm5.jpg',
         width: 1200,
         height: 630,
-        alt: 'Exotica Farms - Premium Agricultural Investment Opportunities',
+        alt: 'Exora Farms - Premium Agricultural Investment Opportunities',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Exotica Farms - Premium Agricultural Real Estate Investment',
+    title: 'Exora Farms - Premium Agricultural Real Estate Investment',
     description: 'Invest in premium agricultural real estate with guaranteed 12-18% annual returns. Professional management, sustainable farming, tax-free dividends.',
     images: ['/assets/hero/farm5.jpg'],
     creator: '@exoticafarming',
@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": ["Organization", "RealEstateAgent", "FinancialService"],
-    "name": "Exotica Farms",
+    "name": "Exora Farms",
     "alternateName": "Exotica Farming",
     "description": "Premium agricultural real estate investment opportunities with guaranteed 12-18% annual returns and sustainable farming practices.",
     "url": "https://exoticafarming.com",
@@ -153,12 +153,12 @@ export default function RootLayout({ children }) {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Exotica Farms",
+    "name": "Exora Farms",
     "url": "https://exoticafarming.com",
     "description": "Premium agricultural real estate investment platform",
     "publisher": {
       "@type": "Organization",
-      "name": "Exotica Farms"
+      "name": "Exora Farms"
     },
     "potentialAction": {
       "@type": "SearchAction",
@@ -174,7 +174,7 @@ export default function RootLayout({ children }) {
     "description": "Premium farmland investment opportunities with guaranteed returns",
     "provider": {
       "@type": "Organization",
-      "name": "Exotica Farms"
+      "name": "Exora Farms"
     },
     "category": "Real Estate Investment",
     "feesAndCommissionsSpecification": "Starting at ₹29.9L per acre",

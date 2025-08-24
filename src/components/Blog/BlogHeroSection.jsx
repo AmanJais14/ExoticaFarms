@@ -32,7 +32,7 @@ const BlogHeroSection = () => {
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-6xl mx-auto">
             {/* Main Headline */}
-            <h1 className="mt-4 text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black text-white mb-2 sm:mb-3 md:mb-2 leading-tight tracking-tight group-hover:scale-105 transition-transform duration-300">
+            <h1 className="mt-4 text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black text-white mb-2 sm:mb-3 md:mb-2 leading-tight  group-hover:scale-105 transition-transform duration-300">
               Invest in Exotic Farming<span className="gradient-text-hero text-yellow-400"></span>
             </h1>
 

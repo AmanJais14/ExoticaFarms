@@ -14,13 +14,13 @@ const SalesChannel = () => {
       id: 1,
       name: "Blinkit",
       category: "Quick Commerce",
-      logo: blinkit,
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmDGgwscraLV6qOR2wopoIKTaPS3rHokvkg&s",
     },
     {
       id: 2,
       name: "Zepto",
       category: "Quick Commerce", 
-      logo: zepto,
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqaQF-vl5-Jm84yoNV0uxJCK18iJ8bJU4yEw&s",
     },
     {
       id: 3,
@@ -109,26 +109,28 @@ const SalesChannel = () => {
             Our Sales <span className="gradient-text">Channels</span>
           </h2>
           <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto leading-relaxed">
-            Premium exotic fruits delivered through India's leading platforms and exported globally
+            Premium exotic fruits delivered through India's leading platforms.
           </p>
         </div>
 
         {/* Sales Channels Logos */}
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16">
-            {salesChannels.map((channel, index) => (
-              <div
-                key={channel.id}
-                className="group transition-all duration-300 hover:scale-110 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <img
-                  src={channel.logo}
-                  alt={`${channel.name} logo`}
-                  className="h-8 sm:h-10 md:h-12 w-auto object-contain  group-hover:opacity-100 transition-opacity duration-300 "
-                />
-              </div>
-            ))}
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 sm:p-12">
+            <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16 lg:grid lg:grid-cols-5 lg:gap-8 lg:justify-items-center">
+              {salesChannels.map((channel, index) => (
+                <div
+                  key={channel.id}
+                  className="group transition-all duration-300 hover:scale-110 animate-fade-in"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <img
+                    src={channel.logo}
+                    alt={`${channel.name} logo`}
+                    className="h-10 w-20 sm:h-12 sm:w-24 md:h-14 md:w-28 object-contain group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

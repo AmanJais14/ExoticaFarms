@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: 'Article Not Found - Exotica Farms',
+      title: 'Article Not Found - Exora Farms',
       description: 'The requested article could not be found. Explore our other agricultural investment insights and farming guides.',
       robots: {
         index: false,
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
   const cleanExcerpt = post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160)
 
   return {
-    title: `${post.title} | Exotica Farms Blog`,
+    title: `${post.title} | Exora Farms Blog`,
     description: cleanExcerpt,
     keywords: [
       ...post.tags,
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
       url: 'https://exoticafarming.com/about'
     }],
     creator: post.author,
-    publisher: 'Exotica Farms',
+    publisher: 'Exora Farms',
     category: 'Agriculture',
     alternates: {
       canonical: `/blog/${post.id}`,
@@ -52,8 +52,8 @@ export async function generateMetadata({ params }) {
       title: post.title,
       description: cleanExcerpt,
       type: 'article',
-      publishedTime: post.publishDate,
-      modifiedTime: post.publishDate,
+      publishedTime: post.date,
+      modifiedTime: post.date,
       authors: [post.author],
       section: 'Agriculture',
       tags: post.tags,
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
           alt: post.title,
         },
       ],
-      siteName: 'Exotica Farms',
+      siteName: 'Exora Farms',
       locale: 'en_US',
     },
     twitter: {

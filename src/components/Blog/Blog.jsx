@@ -217,7 +217,7 @@ const Blog = () => {
                     <div className="flex items-center gap-4 text-sm text-green-500 mb-4">
                       <div className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
-                        <span>{formatDate(post.publishDate)}</span>
+                        <span>{formatDate(post.date)}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />

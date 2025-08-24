@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { Calendar, Users, Menu, X, Leaf, BookOpen } from 'lucide-react';
+import { Calendar,Target, Users, Menu, X, Leaf, BookOpen } from 'lucide-react';
 import { useRouter, usePathname } from 'next/navigation';
 
 const Navbar = () => {
@@ -57,16 +57,7 @@ const Navbar = () => {
   };
 
   const handleVisionClick = () => {
-    // Only scroll if we're on the home page
-    if (pathname === '/') {
-      scrollToSection('our-vision');
-    } else {
-      // Navigate to home page first, then scroll
-      router.push('/');
-      setTimeout(() => {
-        scrollToSection('our-vision');
-      }, 100);
-    }
+    router.push('/vision');
     setIsOpen(false);
   };
 
@@ -88,21 +79,26 @@ const Navbar = () => {
             </div>
             <div>
               <h1 className="text-lg sm:text-xl font-black text-green-900">
-                Exotica<span className="text-emerald-600">Farms</span>
+                Exora<span className="text-emerald-600">Farms</span>
               </h1>
               <p className="text-xs text-green-600 hidden sm:block">Premium Agricultural Investment</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-4 lg:gap-6">
-            {/* <button
+          <div className="hidden md:flex items-center gap-2 lg:gap-3">
+            <button
               onClick={handleVisionClick}
-              className="text-green-700 hover:bg-green-50 hover:text-green-800 px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300"
+              className={`flex items-center gap-2 text-green-700 hover:bg-green-50 hover:text-green-800 px-0 py-2 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                pathname === '/vision'
+                  ? 'bg-green-100 text-green-700 border-2 border-green-300'
+                  : ''
+              }`}
               suppressHydrationWarning={true}
             >
-              Our Vision
-            </button> */}
+              <Target className="w-4 h-4" />
+              Exora Club
+            </button>
 
             <button
               onClick={handleBlogClick}
@@ -153,12 +149,16 @@ const Navbar = () => {
         }`}>
           <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-green-100 p-4 mt-2">
             <div className="space-y-3">
-              {/* <button
+              <button
                 onClick={handleVisionClick}
-                className="w-full flex items-center gap-3 px-4 py-3 bg-white hover:bg-green-50 text-green-700 border-2 border-green-200 hover:border-green-300 rounded-xl font-semibold text-sm transition-all duration-300"
+                className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                  pathname === '/vision'
+                    ? 'bg-green-100 text-green-700 border-2 border-green-300'
+                    : 'bg-white hover:bg-green-50 text-green-700 border-2 border-green-200 hover:border-green-300'
+                }`}
               >
-                Our Vision
-              </button> */}
+                Exora Club
+              </button>
 
               <button
                 onClick={handleBlogClick}

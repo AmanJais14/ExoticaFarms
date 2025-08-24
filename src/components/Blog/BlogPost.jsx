@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen, ArrowRight } from 'lucide-react';
 import { getPostById, getAllPosts } from '../../data/blogData';
 import BlogNavbar from './BlogNavbar';
 import BlogHeroSection from './BlogHeroSection';
@@ -133,7 +133,7 @@ const BlogPost = () => {
               <div className="flex flex-wrap items-center gap-6 text-green-500 mb-6">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
-                  <span>{formatDate(post.publishDate)}</span>
+                  <span>{formatDate(post.date)}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5" />
@@ -189,6 +189,25 @@ const BlogPost = () => {
                     #{tag}
                   </span>
                 ))}
+              </div>
+            </div>
+
+            {/* CTA Section */}
+            <div className="mb-12">
+              <div className="text-center bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
+                <h3 className="text-2xl font-bold text-green-900 mb-4">
+                  Ready to Start Your Agricultural Investment Journey?
+                </h3>
+                <p className="text-green-700 mb-6 max-w-2xl mx-auto">
+                  Join thousands of investors who are already earning tax-free returns through our managed farmland investment opportunities. Start building your agricultural portfolio today.
+                </p>
+                <button
+                  onClick={() => navigate('/')}
+                  className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  <span>Invest With Us</span>
+                  <ArrowRight className="w-5 h-5" />
+                </button>
               </div>
             </div>
 

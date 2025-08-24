@@ -23,13 +23,13 @@ export const metadata = {
     description: 'Discover the latest insights on agricultural real estate investment, exotic farming trends, and sustainable agriculture practices.',
     type: 'website',
     url: 'https://exoticafarming.com/blog',
-    siteName: 'Exotica Farms',
+    siteName: 'Exora Farms',
     images: [
       {
         url: '/assets/hero/farm5.jpg',
         width: 1200,
         height: 630,
-        alt: 'Exotica Farms Agricultural Investment Blog',
+        alt: 'Exora Farms Agricultural Investment Blog',
       },
     ],
     locale: 'en_US',

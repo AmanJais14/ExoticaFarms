@@ -237,7 +237,7 @@ const HighLights = () => {
       <div className="container mx-auto px-6 relative">
         {/* Section Header */}
         <div className="text-center mb-8 animate-fade-in">
-          <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
+          <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2 tracking-normal">
              What is <span className="gradient-text">this opportunity?</span>
           </h2>
           {/* <p className="text-base text-green-700 max-w-2xl mx-auto">
@@ -312,19 +312,25 @@ const HighLights = () => {
 
           {/* Right Side - Text Content */}
           <div className="animate-slide-up delay-200">
-            <div className="space-y-0">
-              <p className="text-black text-[0.9rem] leading-relaxed text-justify">
-                This is an exotic farming opportunity with a proven product–market fit in the last 7 years of Bengaluru -Anantapur corridor, now being launched exclusively by <span className="font-extrabold text-emerald-600">Perfect neighbourhood.</span> It offers <span className="font-extrabold text-emerald-600">strong portfolio diversification </span> by adding a high-yield, tangible asset class to traditional investments.
+            <div className="space-y-2">
+               <p className="text font-extrabold text-emerald-600 text-[0.9rem] leading-relaxed text-left">
+                Own your farmland with Exora Farms!
+               </p>
+              <p className="text-black text-[0.9rem] leading-relaxed text-left">
+                {/* This is an exotic farming opportunity with a proven product–market fit in the last 7 years of Bengaluru -Anantapur corridor, now being launched exclusively by <span className="font-extrabold text-emerald-600">Perfect neighbourhood.</span> It offers <span className="font-extrabold text-emerald-600">strong portfolio diversification </span> by adding a high-yield, tangible asset class to traditional investments. */}
+                    Located at 97km from Bengaluru Airport, Exora Farms offers expert managed farmlands spread across 200 acres. Backed by 7 years of proven success, this is your chance to be part of an exotic farming opportunity that’s growing fast.
 
               </p>
 
-              <p className="text-black text-[0.9rem] leading-relaxed text-justify">
-                We grow premium crops like fresh dates and avocados, often selling for twice the price of regular fruits. The yield is already sold through quick-commerce platforms and leading retail channels, with exports planned soon. Investors receive tax-free annual dividends from 3rd year and 10–12% yearly land appreciation, with all operations managed by our expert team.
+              <p className="text-black text-[0.9rem] leading-relaxed text-left">
+                {/* We grow premium crops like fresh dates and avocados, often selling for twice the price of regular fruits. The yield is already sold through quick-commerce platforms and leading retail channels, with exports planned soon. Investors receive tax-free annual dividends from 3rd year and 8–12% yearly land appreciation, with all operations managed by our expert team. */}
+                    Launched by Perfect Neighbourhood in collaboration with Farmties, we grow high-value crops like <span className='font-extrabold text-emerald-600'> fresh dates and avocados</span>—already sold on top quick-commerce platforms like <span className='font-extrabold text-emerald-600'>blinkIt, Zepto.</span>
 
               </p>
 
-              <p className="text-black text-[0.9rem] leading-relaxed text-justify">
-                With ideal climate and proximity to major markets, this is a secure, inflation-protected passive income opportunity with full land ownership <span className="font-extrabold text-emerald-600">—a generational income source that pays you year after year.</span>
+              <p className="text-black text-[0.9rem] leading-relaxed text-left">
+               As an investor, you enjoy <span className='font-extrabold text-emerald-600'>tax-free annual dividends</span> from year 3, along with 8–12% yearly land appreciation. A smart, green investment that pays!
+                {/* With ideal climate and proximity to major markets, this is a secure, inflation-protected passive income opportunity with full land ownership <span className="font-extrabold text-emerald-600">—a generational income source that pays you year after year.</span> */}
               </p>
               {/* Decorative elements */}
               {/* <div className="flex items-center gap-4 pt-4">

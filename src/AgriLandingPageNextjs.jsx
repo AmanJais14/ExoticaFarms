@@ -375,7 +375,7 @@ const AgriLandingPage = () => {
         "I had never tasted fresh Barhi dates before, and the farm visit completely changed my perspective. The natural sweetness and unique texture were unlike anything I had tried earlier. Walking through the orchards, seeing the crops up close, and meeting the farmers gave me a real sense of connection to the land. That experience convinced me this was a rare and meaningful investment opportunity",
     },
     {
-      name: "Uttra Rana, Deloitte",
+      name: "Piyush Sahu, IIM Mumbai",
       // location: 'Investing in the US for 5 years',
       quote:
         "I became an early investor in Farmties with their 200-acre project in 2022. From day one, the land development and farm management have been handled with exceptional professionalism. The community feedback has been consistently positive, and seeing the produce already available in quick commerce platforms is reassuring. Overall, it has been a smooth and satisfying experience.",
@@ -868,7 +868,7 @@ const AgriLandingPage = () => {
                   <div className="glass px-3 py-1 rounded-xl text-neutral-600 text-xs">
                     <span className="text-xs sm:text-sm text-black flex items-center gap-1">
                       {/* <div className="w-1.5 h-1.5 bg-primary-500 rounded-full animate-pulse"></div> */}
-                      Explore the picture shot at our existing farmland project.
+                      Explore the pictures shot at our existing farmland project.
                     </span>
                   </div>
                 </div>
@@ -1065,7 +1065,7 @@ const AgriLandingPage = () => {
                 </h2>
                 <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto">
                   Real stories from satisfied investors who are earning
-                  consistent returns
+                  consistent returns.
                 </p>
               </div>
 
@@ -1471,7 +1471,14 @@ const AgriLandingPage = () => {
                     <span className="gradient-text"> Information</span>
                   </h3>
                   <div className="space-y-4 sm:space-y-6">
-                    <div className="card-premium group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-lg border border-neutral-100 hover:shadow-premium transition-all duration-300">
+                    <div
+                      onClick={() => {
+                        const message = "Hi! I'm interested in learning more about your agricultural investment opportunities. Could you please provide more details?";
+                        const whatsappUrl = `https://wa.me/919379627377?text=${encodeURIComponent(message)}`;
+                        window.open(whatsappUrl, '_blank');
+                      }}
+                      className="card-premium group flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-lg border border-neutral-100 hover:shadow-premium transition-all duration-300 cursor-pointer hover:bg-green-50"
+                    >
                       <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <MessageCircle className="w-6 h-6 text-white" />
                       </div>
@@ -1479,11 +1486,11 @@ const AgriLandingPage = () => {
                         <p className="font-bold text-neutral-800 text-sm mb-1">
                           Call/WhatsApp
                         </p>
-                        <p className="text-neutral-600 text-sm">
+                        <p className="text-green-600 text-sm font-semibold hover:text-green-700 transition-colors duration-300">
                           +91 9379627377
                         </p>
                         <p className="text-neutral-500 text-xs">
-                          Available 24/7
+                          Available 24/7 • Click to message
                         </p>
                       </div>
                     </div>
@@ -1587,14 +1594,12 @@ const AgriLandingPage = () => {
           </section>
 
           {/* Satellite Image Section */}
-          <section className="bg-white">
+          {/* <section className="bg-white">
             <div
               className="relative cursor-pointer group overflow-hidden w-full h-64 sm:h-80 md:h-98"
               onClick={() => {
-                // Only run on client side
                 if (typeof window !== 'undefined') {
-                  // Replace with your actual farm coordinates
-                  // Example: window.open('https://maps.google.com/?q=28.6139,77.2090', '_blank');
+
                   window.open(
                     `https://www.google.com/maps/place/13%C2%B057'01.1%22N+77%C2%B034'58.0%22E/@13.9503746,77.5825449,536m/data=!3m1!1e3!4m4!3m3!8m2!3d13.950303!4d77.582768?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D`,
                     "_blank"
@@ -1608,22 +1613,19 @@ const AgriLandingPage = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
 
-              {/* Black overlay */}
+ 
               <div className="absolute inset-0 bg-black/30"></div>
 
-              {/* Hover overlay with map icon */}
+
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="bg-white/90 p-3 rounded-full">
                   <Map className="w-6 h-6 text-gray-700" />
                 </div>
               </div>
 
-              {/* Click indicator */}
-              {/* <div className="absolute bottom-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-medium text-gray-700">
-            Click to view on map
-          </div> */}
+              
             </div>
-          </section>
+          </section> */}
 
           {/* Text Strip Above Footer */}
           <section className="bg-gradient-to-br from-green-500 to-green-800 py-4">
@@ -1646,19 +1648,18 @@ const AgriLandingPage = () => {
               <div className="text-center">
                 <div className="mb-4 sm:mb-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-black mb-2">
-                    <span className="gradient-text">Exotica Farms</span>
+                    <span className="gradient-text">Exora Farms</span>
                   </h3>
-                  <p className="text-neutral-400 text-xs sm:text-sm max-w-2xl mx-auto">
-                    Transforming agriculture through premium farmland
-                    investments and professional management
+                  <p className="text-neutral-400 text-xs sm:text-sm max-w-5xl mx-auto">
+                   Disclaimer : Agricultural investments are subject to inherent risks - weather, market fluctuations, and regulatory changes can affect yields and revenues. We strongly advise consulting financial and agricultural experts before investing.
                   </p>
                 </div>
 
                 <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-4 sm:mb-6 text-neutral-300">
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Shield className="w-4 h-4 text-white" />
                     <span className="text-sm">100% Legal</span>
-                  </div>
+                  </div> */}
                   {/* <div className="flex items-center gap-2">
                     <TrendingUp className="w-4 h-4 text-white" />
                     <span className="text-sm">12-18% Returns</span>

@@ -184,8 +184,9 @@ const Blog = () => {
                   className="group bg-white rounded-3xl shadow-lg border border-green-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   {/* Featured Image */}
-                  <div className="relative h-48 overflow-hidden">
+                  <div onClick={() => router.push(`/blog/${post.id}`)} className="relative h-48 overflow-hidden">
                     <img
+                    
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -210,7 +211,7 @@ const Blog = () => {
                       {post.title}
                     </h2>
                     
-                    <p className="text-green-600 mb-4 line-clamp-3">
+                    <p className="text-green-600 mb-4 line-clamp-3 text-sm">
                       {post.excerpt}
                     </p>
 
@@ -218,7 +219,7 @@ const Blog = () => {
                     <div className="flex items-center gap-4 text-sm text-green-500 mb-4">
                       <div className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
-                        <span>{formatDate(post.publishDate)}</span>
+                        <span>{formatDate(post.date)}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
@@ -251,13 +252,13 @@ const Blog = () => {
                     </div>
 
                     {/* Read More Button */}
-                    <button
+                    {/* <button
                       onClick={() => router.push(`/blog/${post.id}`)}
                       className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-xl font-semibold transition-all duration-300 group-hover:shadow-lg"
                     >
                       Read Full Article
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </button>
+                    </button> */}
                   </div>
                 </article>
               ))}

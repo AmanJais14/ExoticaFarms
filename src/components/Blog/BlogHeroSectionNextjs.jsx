@@ -36,7 +36,7 @@ const BlogHeroSection = () => {
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-6xl mx-auto">
             {/* Main Headline */}
-            <h1 className="mt-4 text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black text-white mb-2 sm:mb-3 md:mb-2 leading-tight tracking-tight group-hover:scale-105 transition-transform duration-300">
+            <h1 className="mt-4 text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-black text-white mb-2 sm:mb-3 md:mb-2 leading-tight  group-hover:scale-105 transition-transform duration-300">
               Invest in Exotic Farming<span className="gradient-text-hero text-yellow-400"></span>
             </h1>
 
@@ -52,19 +52,19 @@ const BlogHeroSection = () => {
                 <span className="text-white/90">Starting at </span>
                 <span className="text-green-300 font-bold">₹29.9L per acre</span>
               </p>
-              <p className="text-xs sm:text-sm md:text-sm lg:text-base max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+              {/* <p className="text-xs sm:text-sm md:text-sm lg:text-base max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
                 <span className="text-white/80">Earn </span>
                 <span className="text-green-300 font-bold">12-18% Annual Dividends</span>
-              </p>
+              </p> */}
               </div>
             </div>
 
             {/* Click to return home indicator */}
-            {/* <div className="mt-4 sm:mt-6 md:mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <div className="mt-4 sm:mt-6 md:mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
               <p className="text-white/70 text-sm sm:text-base md:text-base font-medium">
-                Click anywhere to return to home page
+                Click to explore
               </p>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

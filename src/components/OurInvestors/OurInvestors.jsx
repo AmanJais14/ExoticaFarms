@@ -24,7 +24,7 @@ const OurInvestors = () => {
     {
       id: 4,
       name: "Leadschool",
-      logo: "https://leadschool.in/wp-content/uploads/2022/09/lead-logo.webp",
+      logo: "https://www.medianews4u.com/wp-content/uploads/2021/07/LEAD-School-rebrands-as-LEAD-to-focus-on-transforming-conventional-schooling.jpg",
       type: "Education Partner"
     },
     {
@@ -110,27 +110,29 @@ const OurInvestors = () => {
             Our <span className="gradient-text">Investors</span>
           </h2>
           <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto">
-            Our investors are from these leading companies and organizations
+            Our investors are from these leading companies and organizations.
           </p>
         </div>
 
         {/* Investors Logos */}
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16 ">
-            {investors.map((investor, index) => (
-              <div
-                key={investor.id}
-                className="group transition-all duration-300 hover:scale-110 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <img
-                  src={investor.logo}
-                  alt={`${investor.name} logo`}
-                  className="h-8 sm:h-10 md:h-12 w-auto object-contain  group-hover:opacity-100 transition-opacity duration-300 "
-                  title={investor.name}
-                />
-              </div>
-            ))}
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 sm:p-12">
+            <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16 lg:grid lg:grid-cols-4 lg:gap-8 lg:justify-items-center">
+              {investors.map((investor, index) => (
+                <div
+                  key={investor.id}
+                  className="group transition-all duration-300 hover:scale-110 animate-fade-in"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <img
+                    src={investor.logo}
+                    alt={`${investor.name} logo`}
+                    className="h-10 w-20 sm:h-12 sm:w-24 md:h-14 md:w-28 object-contain group-hover:opacity-100 transition-opacity duration-300"
+                    title={investor.name}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

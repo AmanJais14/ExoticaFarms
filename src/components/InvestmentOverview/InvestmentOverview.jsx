@@ -17,7 +17,7 @@ const InvestmentOverview = () => {
           <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
             Your Investment at a <span className="gradient-text">Glance</span>
           </h2>
-          <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto">Transparent farmland opportunity combining land ownership & premium crop cultivation</p>
+          <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto">Transparent farmland opportunity combining land ownership & premium crop cultivation.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
@@ -139,19 +139,19 @@ const InvestmentOverview = () => {
                 <span className="font-extrabold text-black text-sm">Farmland as a Service</span>
               </div>
               <div className="bg-green-50/80 p-4 rounded-xl border border-green-300/50">
-                <p className="text-xs font-semibold text-emerald-600 mb-3">Price Includes</p>
+                {/* <p className="text-xs font-semibold text-emerald-600 mb-3">Price Includes</p> */}
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Land development and Infra.</span>
+                    <span className="text-sm">Land development and Infra</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Crop cultivation and care.</span>
+                    <span className="text-sm">Crop cultivation and sales</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Sales.</span>
+                    <span className="text-sm">Annual maintenance from Y3 </span>
                   </div>
                 </div>
               </div>

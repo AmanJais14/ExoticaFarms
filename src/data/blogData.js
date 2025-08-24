@@ -1,118 +1,296 @@
 // Blog data - You can add/edit blog posts here
 export const blogPosts = [
   {
-    id: 1,
-    title: "The Future of Sustainable Agriculture: How Technology is Revolutionizing Farming",
-    excerpt: "Discover how modern technology and sustainable practices are transforming agriculture, creating opportunities for investors and farmers alike.",
+    id: 'exotic-farming-new-asset-class-india',
+    title: 'Exotic Farming: The New Asset Class Indians Trust Beyond Gold and Real Estate',
+    metaTitle: 'Exotic Farming Investment | New Asset Class in India',
+    metaDescription: 'Discover why Exora Farms is positioning managed farmland investment in Bangalore as India\'s new asset class beyond gold and real estate. Learn about tax-free agriculture income, exotic fruit farming, and portfolio diversification.',
+    excerpt: 'As India\'s investment landscape evolves, farmland—especially exotic farming—is emerging as a new, trusted asset class beyond traditional gold and real estate investments.',
     content: `
-      <p>Agriculture is undergoing a revolutionary transformation, driven by cutting-edge technology and sustainable practices that promise to reshape how we grow food and manage farmland. As global populations continue to rise and climate challenges intensify, the agricultural sector is embracing innovation like never before.</p>
-      
-      <h3>Precision Agriculture: The New Standard</h3>
-      <p>Precision agriculture uses GPS technology, sensors, and data analytics to optimize crop yields while minimizing resource waste. Farmers can now monitor soil conditions, moisture levels, and crop health in real-time, making informed decisions that boost productivity and reduce environmental impact.</p>
-      
-      <h3>Smart Irrigation Systems</h3>
-      <p>Water scarcity is a growing concern worldwide. Smart irrigation systems use weather data, soil moisture sensors, and AI algorithms to deliver the exact amount of water crops need, when they need it. This technology can reduce water usage by up to 30% while maintaining or even improving crop yields.</p>
-      
-      <h3>Investment Opportunities in AgriTech</h3>
-      <p>The convergence of technology and agriculture presents unprecedented investment opportunities. From automated farming equipment to biotechnology innovations, investors are finding new ways to participate in the agricultural revolution while generating sustainable returns.</p>
-      
-      <p>At Exotic Farming, we're at the forefront of this transformation, combining traditional farming wisdom with modern technology to create profitable, sustainable agricultural investments.</p>
+      <h2>Introduction</h2>
+      <p>As India's investment landscape evolves, farmland—especially exotic farming—is emerging as a new, trusted asset class. Traditionally, Indians relied heavily on gold and real estate as safe stores of value. However, educated professionals, CXOs, and high-net-worth individuals in Bangalore and Hyderabad are now considering managed farmland investments as alternative investments in India. This shift is driven by the potential for tax-free agriculture income, dual benefits of land appreciation and crop yields, and the rise of exotic fruit farming investment.</p>
+
+      <h2>Farmland: The New Asset Class</h2>
+      <p>Gold and real estate have dominated Indian portfolios for decades. Gold offers moderate returns and real estate appreciates steadily, but farmland is proving to be more dynamic. Farmland provides not only appreciation but also recurring crop income. With government policies supporting agri-innovation and demand for premium produce rising, agriculture is now recognized as a new asset class.</p>
+
+      <h2>Exotic Fruit Farming Investment</h2>
+      <p>Exotic fruits such as avocados and fresh dates are commanding premium prices in India. Exora Farms focuses on cultivating these crops to ensure strong profitability. With established demand through quick-commerce platforms and leading retail chains, and exports planned soon, investors can trust this segment to generate stable returns.</p>
+
+      <h2>Managed Farmland Investment Bangalore</h2>
+      <p>The managed farmland model offered by Exora Farms ensures hassle-free ownership for urban professionals. All farming, harvesting, and sales are managed by experts, ensuring consistent quality and returns. Investors enjoy the benefits of farmland ownership without operational challenges, making it ideal for busy IT professionals and CXOs in Bangalore and Hyderabad.</p>
+
+      <h2>Tax-Free Agriculture Income</h2>
+      <p>One of the most attractive features of farmland investment is that agricultural income in India is tax-free. This allows investors to earn dividends without the burden of annual taxation, unlike other investments such as fixed deposits or stocks.</p>
+
+      <h2>Conclusion</h2>
+      <p>Exora Farms is pioneering exotic farming as a dependable, high-yield, alternative investment in India. By combining managed farmland investment in Bangalore with exotic fruit farming, investors can achieve portfolio diversification, inflation protection, and generational wealth creation through tax-free agriculture income.</p>
     `,
-    author: "Dr. Rajesh Kumar",
-    authorRole: "Agricultural Technology Specialist",
-    publishDate: "2024-12-15",
-    readTime: "8 min read",
-    category: "Technology",
-    tags: ["AgriTech", "Sustainability", "Investment", "Innovation"],
-    image: "data:image/jpeg;base64,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",
-    featured: true
+    author: 'Exora Farms Team',
+    date: '2025-08-24',
+    readTime: '5 min read',
+    category: 'Investment',
+    tags: ['Exotic Farming', 'Alternative Investment', 'Tax-Free Income', 'Bangalore', 'Asset Class', 'Portfolio Diversification'],
+    image: '/assets/blog/exotic-farming-asset-class.jpg',
+    featured: true,
+    seo: {
+      keywords: ['exotic farming investment', 'managed farmland Bangalore', 'tax-free agriculture income', 'alternative investment India', 'exotic fruit farming', 'new asset class', 'portfolio diversification'],
+      canonicalUrl: '/blog/exotic-farming-new-asset-class-india'
+    }
   },
   {
-    id: 2,
-    title: "Exotic Fruits: The High-Value Crop Revolution in Indian Agriculture",
-    excerpt: "Learn why exotic fruits like avocados and dates are becoming the most profitable crops for modern farmers and investors.",
+    id: 'exotic-farmlands-future-diversification',
+    title: 'Why Exotic Farmlands Are the Future of Diversification',
+    metaTitle: 'Exotic Farmland Diversification | Alternative Investment in India',
+    metaDescription: 'Learn why exotic farmland is the future of portfolio diversification. Exora Farms offers managed farmland investment, tax-free agriculture income, and exotic fruit farming opportunities in Bangalore and beyond.',
+    excerpt: 'Diversification is the cornerstone of wealth management. Discover how exotic farmland investment offers a secure alternative to traditional investments with tax-free agricultural income.',
     content: `
-      <p>The Indian agricultural landscape is witnessing a remarkable shift towards high-value exotic fruits. Crops like avocados, dates, and dragon fruits are not just trendy superfoods – they're becoming the cornerstone of profitable farming ventures across the country.</p>
-      
-      <h3>Why Exotic Fruits Command Premium Prices</h3>
-      <p>Exotic fruits typically sell for 2-3 times the price of traditional fruits due to their nutritional benefits, limited supply, and growing consumer demand. The health-conscious urban population is driving unprecedented demand for these superfoods.</p>
-      
-      <h3>Climate Advantages in India</h3>
-      <p>India's diverse climate zones provide ideal conditions for growing various exotic fruits. The Bangalore-Anantapur corridor, for instance, offers perfect conditions for avocado and date cultivation, with optimal temperature ranges and soil conditions.</p>
-      
-      <h3>Market Demand and Export Potential</h3>
-      <p>The domestic market for exotic fruits is growing at 15-20% annually, while export opportunities to Middle Eastern and European markets present additional revenue streams. Quick-commerce platforms and premium retail chains are actively seeking reliable suppliers.</p>
-      
-      <p>Our farming operations focus on these high-value crops, ensuring investors benefit from both domestic demand and export opportunities.</p>
+      <h2>Introduction</h2>
+      <p>Diversification is the cornerstone of wealth management. In today's volatile world, Indian professionals are seeking secure and alternative investments in India. Exora Farms introduces exotic fruit farming investment as an innovative way to diversify portfolios, create tax-free agriculture income, and hedge against inflation.</p>
+
+      <h2>Alternative Investment India: Agriculture's Rise</h2>
+      <p>Traditional investments like gold, mutual funds, and real estate are now being supplemented with agriculture. Managed farmland offers steady income and appreciation, positioning agriculture as a reliable new asset class. Exora Farms provides the opportunity to enter this sector without the risks of traditional farming.</p>
+
+      <h2>Exotic Fruit Farming Investment</h2>
+      <p>Premium fruits such as avocados and dates fetch nearly twice the price of regular fruits in Indian markets. Exora Farms leverages this opportunity to deliver strong, recurring returns to investors. With proven demand and export opportunities, exotic farming is positioned as a high-growth avenue for the next decade.</p>
+
+      <h2>Tax-Free Agriculture Income</h2>
+      <p>Exora Farms ensures investors receive tax-free agricultural income from the third year onward. This unique advantage allows investors to retain more of their earnings compared to other taxed investment classes.</p>
+
+      <h2>Portfolio Diversification with New Asset Class: Agriculture</h2>
+      <p>Adding farmland to a portfolio diversifies risk, balances volatility, and offers exposure to a tangible, appreciating asset. Exora Farms offers curated opportunities to invest in managed farmland in Bangalore and Hyderabad, providing both stability and growth.</p>
+
+      <h2>Conclusion</h2>
+      <p>Exora Farms demonstrates why exotic farmlands are the future of diversification. As a managed farmland investment in Bangalore, it blends the benefits of alternative investment in India, exotic fruit farming, and tax-free agriculture income. This model not only generates consistent returns but also ensures long-term security, making it the perfect addition to any modern portfolio.</p>
     `,
-    author: "Priya Sharma",
-    authorRole: "Crop Specialist & Market Analyst",
-    publishDate: "2024-12-10",
-    readTime: "6 min read",
-    category: "Crops",
-    tags: ["Exotic Fruits", "Market Analysis", "Profitability", "Export"],
-    image: "/assets/farm.jpg",
-    featured: true
+    author: 'Exora Farms Team',
+    date: '2025-08-24',
+    readTime: '4 min read',
+    category: 'Portfolio Management',
+    tags: ['Portfolio Diversification', 'Alternative Investment', 'Exotic Farmland', 'Tax-Free Income', 'Wealth Management', 'Asset Class'],
+    image: '/assets/blog/exotic-farmland-diversification.jpg',
+    featured: true,
+    seo: {
+      keywords: ['exotic farmland diversification', 'alternative investment India', 'portfolio diversification', 'managed farmland Bangalore', 'tax-free agriculture income', 'exotic fruit farming', 'new asset class'],
+      canonicalUrl: '/blog/exotic-farmlands-future-diversification'
+    }
   },
   {
-    id: 3,
-    title: "Land Appreciation vs. Stock Market: Why Agricultural Real Estate is the Smart Choice",
-    excerpt: "A comprehensive analysis of why agricultural land investments outperform traditional investment vehicles in the current economic climate.",
+    id: 'dates-avocados-exotic-farming-anantapur',
+    title: 'Dates and Avocados: The Next Big Thing in Indian Exotic Farming | Why Anantapur is Perfect',
+    metaTitle: 'Dates and Avocados Exotic Farming in Anantapur | Investment Guide',
+    metaDescription: 'Discover why dates and avocados are emerging as India\'s most profitable exotic crops. Explore advantages, market trends, investment opportunities, and why Anantapur is the ideal region for cultivation.',
+    excerpt: 'India is entering a new era of farming with dates and avocados emerging as the next big thing in exotic farming, offering exceptional returns and sustainability.',
     content: `
-      <p>In an era of market volatility and economic uncertainty, savvy investors are turning to agricultural real estate as a stable, appreciating asset class that offers both capital growth and regular income streams.</p>
-      
-      <h3>Historical Performance Comparison</h3>
-      <p>Over the past decade, agricultural land in prime locations has appreciated at an average rate of 12-15% annually, significantly outperforming many traditional investment options. Unlike stocks, land provides tangible value that doesn't disappear overnight.</p>
-      
-      <h3>Inflation Hedge and Stability</h3>
-      <p>Agricultural land serves as an excellent hedge against inflation. As food prices rise, so does the value of productive farmland. This natural correlation provides investors with protection against currency devaluation and economic instability.</p>
-      
-      <h3>Multiple Revenue Streams</h3>
-      <p>Unlike passive investments, agricultural land generates multiple income streams: crop yields, land appreciation, and potential development opportunities. Our managed farming approach ensures investors benefit from all these revenue sources without hands-on involvement.</p>
-      
-      <p>With proper management and strategic location selection, agricultural real estate offers the perfect combination of stability, growth, and income generation.</p>
+      <h2>Introduction</h2>
+      <p>India is entering a new era of farming. Beyond traditional crops, investors are turning towards exotic, high-value options that promise better returns, sustainability, and global demand. Among them, date palms and avocados are emerging as the next big thing in Indian exotic farming.</p>
+      <p>These crops are not just fruits; they represent an investment opportunity with strong demand, minimal risks, and perfect agro-climatic conditions in regions like Anantapur, Andhra Pradesh.</p>
+
+      <h2>Why Exotic Farming is Rising in India</h2>
+      <ul>
+        <li>Rising middle-class demand for premium, healthy fruits like avocado.</li>
+        <li>India's heavy dependence on imports creating a supply gap.</li>
+        <li>Government support for high-value horticulture under MIDH and NHB.</li>
+        <li>Investors looking for resilient, tax-efficient agricultural assets.</li>
+      </ul>
+
+      <h2>The Agronomic Advantages</h2>
+
+      <h3>Date Palms: Hardy and Profitable</h3>
+      <ul>
+        <li>Thrive in hot, dry climates (ideal for Anantapur and Rajasthan).</li>
+        <li>Tolerant to saline water and poor soils.</li>
+        <li>Productive lifespan of 30–40 years.</li>
+        <li>Begin yielding in 3–5 years, with mature trees producing 50–150 kg annually.</li>
+        <li>Require minimal pesticides, reducing input costs.</li>
+      </ul>
+
+      <h3>Avocados: India's Emerging Superfood</h3>
+      <p>Avocados have quickly become one of the most sought-after fruits in India's premium markets. They adapt well to Indian conditions when supported with modern irrigation and orchard management. Avocado trees begin bearing fruit in 3–4 years, with mature orchards yielding hundreds of fruits per tree annually. Their long productive lifespan of 40–50 years ensures consistent returns.</p>
+      <p>They thrive best under well-drained soils and controlled drip irrigation, which makes them ideal for semi-arid zones when managed properly. As evergreen trees, they also contribute to sustainability and long-term income security for farmers and investors.</p>
+
+      <h2>Economic Upside</h2>
+
+      <h3>Profit Potential of Dates</h3>
+      <ul>
+        <li>Mature plantations generate ₹6–12 lakh per acre annually.</li>
+        <li>Farmers in Andhra and Gujarat have achieved ₹40,000 per tree in peak years.</li>
+        <li>Strong demand during festive seasons ensures stable markets.</li>
+        <li>Long-term productivity creates consistent cash flow.</li>
+      </ul>
+
+      <h3>Profit Potential of Avocados</h3>
+      <ul>
+        <li>Avocados fetch ₹300–₹500 per kg in Indian metros.</li>
+        <li>A well-managed orchard can earn ₹6–12 lakh per acre annually.</li>
+        <li>Strong export potential to Middle East and Asia.</li>
+        <li>Processing opportunities (avocado oil, pulp) add further revenue streams.</li>
+      </ul>
+
+      <h2>Market Trends</h2>
+
+      <h3>Dates</h3>
+      <ul>
+        <li>India imports nearly 500,000 tons of dates annually worth over ₹2,000 crore.</li>
+        <li>Import substitution creates an immediate opportunity for domestic growers.</li>
+        <li>Premium varieties like Medjool and Barhee already have proven demand.</li>
+        <li>Gujarat, Rajasthan, and Andhra are emerging as India's date hubs.</li>
+      </ul>
+
+      <h3>Avocados</h3>
+      <ul>
+        <li>Imports of avocados in India have grown more than 10,000% in the last decade.</li>
+        <li>Domestic consumers in metros and Tier-2 cities are adopting avocado as a superfood.</li>
+        <li>Hotels, restaurants, and e-commerce platforms are fueling demand growth.</li>
+        <li>Global suppliers are already eyeing India, signaling a booming market.</li>
+      </ul>
+
+      <h2>Government Policy Support</h2>
+      <ul>
+        <li>NHB offers 25% capital subsidy for date palm plantations.</li>
+        <li>Rajasthan and Gujarat provide subsidies on saplings, drip irrigation, and post-harvest infrastructure.</li>
+        <li>Tamil Nadu and Karnataka promote exotic fruit crops, including avocado.</li>
+        <li>Crop insurance under PMFBY provides cover against natural calamities.</li>
+        <li>Cold chain support under Agriculture Infrastructure Fund benefits avocado distribution.</li>
+      </ul>
+
+      <h2>Case Studies</h2>
+      <ul>
+        <li><strong>Kutch, Gujarat:</strong> Desert land turned into India's date capital; cooperative farmers now earn 30–40x more through direct marketing.</li>
+        <li><strong>Anantapur, Andhra Pradesh:</strong> Farmers like Sudheer Naidu pioneered date palm cultivation, earning lakhs per acre despite drought-prone conditions.</li>
+        <li><strong>Bhopal, Madhya Pradesh:</strong> Avocado farmer achieved ₹1 crore turnover from 10 acres by adopting modern irrigation and orchard practices.</li>
+        <li><strong>Telangana:</strong> A young farmer successfully exported avocados to Kuwait, proving India's potential for global avocado markets.</li>
+      </ul>
+
+      <h2>Why Anantapur is Perfect</h2>
+      <ul>
+        <li>Hot, dry summers ideal for date palm sweetness.</li>
+        <li>Low rainfall reduces disease pressure for both crops.</li>
+        <li>Red sandy loam soils are well-suited for orchards.</li>
+        <li>Farmers already reporting strong profits from date palms.</li>
+        <li>Connectivity to Bangalore, Hyderabad, and Chennai ensures market access.</li>
+        <li>Potential to emerge as India's 'Date and Avocado Valley' with long-term investment.</li>
+      </ul>
+
+      <h2>Why Investors Should Act Now</h2>
+      <ul>
+        <li>India's heavy import reliance creates guaranteed demand.</li>
+        <li>Subsidies and crop insurance reduce risk.</li>
+        <li>30–50 years of productivity ensures long-term ROI.</li>
+        <li>Avocados are globally demanded, perfect for domestic and export growth.</li>
+        <li>Early investors capture brand leadership and premium pricing.</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>Dates and avocados are the future of Indian exotic farming. With ideal climate zones like Anantapur, government support, and booming demand, they promise high ROI and sustainability.</p>
+      <p>For investors, this is the moment to act. Early movers will not only secure strong profits but also shape India's position in the global exotic fruit market.</p>
     `,
-    author: "Amit Patel",
-    authorRole: "Investment Strategist",
-    publishDate: "2024-12-05",
-    readTime: "7 min read",
-    category: "Investment",
-    tags: ["Real Estate", "Investment Strategy", "Market Analysis", "ROI"],
-    image: "/assets/land-img1.jpg",
-    featured: false
+    author: 'Exora Farms Team',
+    date: '2025-08-24',
+    readTime: '8 min read',
+    category: 'Exotic Farming',
+    tags: ['Dates', 'Avocados', 'Exotic Farming', 'Anantapur', 'Investment Opportunity', 'Agricultural Innovation', 'High-Value Crops'],
+    image: '/assets/blog/dates-avocados-anantapur.jpg',
+    featured: true,
+    seo: {
+      keywords: ['dates farming India', 'avocado cultivation Anantapur', 'exotic farming investment', 'date palm plantation', 'avocado orchard India', 'agricultural investment opportunities', 'Anantapur farming'],
+      canonicalUrl: '/blog/dates-avocados-exotic-farming-anantapur'
+    }
   },
   {
-    id: 4,
-    title: "Sustainable Farming Practices: Building a Greener Future",
-    excerpt: "Explore how sustainable farming methods are not only better for the environment but also more profitable in the long run.",
+    id: 'barhi-dates-india-golden-superfruit-anantapur',
+    title: 'Barhi Dates – India\'s Golden Superfruit and the Future of Exotic Farming in Anantapur',
+    metaTitle: 'Barhi Dates Farming in Anantapur | India\'s Golden Superfruit Investment',
+    metaDescription: 'Discover why fresh yellow Barhi dates are emerging as India\'s golden superfruit. Learn about health benefits, investment opportunities, and why Anantapur is ideal for Barhi date farming.',
+    excerpt: 'Barhi dates, with their golden yellow skin and crisp, sweet bite, are emerging as India\'s most exciting superfruit with enormous potential for consumers and investors.',
     content: `
-      <p>Sustainable farming is no longer just an environmental imperative – it's a business strategy that delivers superior long-term returns while preserving our planet for future generations.</p>
-      
-      <h3>Organic Certification Premium</h3>
-      <p>Organic produce commands premium prices in the market, often 30-50% higher than conventional crops. The certification process, while rigorous, opens doors to high-value market segments and export opportunities.</p>
-      
-      <h3>Soil Health and Long-term Productivity</h3>
-      <p>Sustainable practices improve soil health over time, leading to better yields and reduced input costs. Healthy soil retains more water, requires fewer fertilizers, and produces more nutritious crops.</p>
-      
-      <h3>Carbon Credits and Additional Revenue</h3>
-      <p>Sustainable farms can generate additional revenue through carbon credit programs. By sequestering carbon in soil and vegetation, farms can earn credits that provide supplementary income streams.</p>
-      
-      <p>Our commitment to sustainable practices ensures that our farming operations remain profitable while contributing to environmental conservation.</p>
+      <h2>Introduction</h2>
+      <p>Barhi dates, with their golden yellow skin and crisp, sweet bite, are one of the most exciting fruits entering India's farming landscape. Known for their crunchy apple-like texture when fresh, and rich butterscotch flavor as they ripen, Barhi dates are more than just a treat — they are a superfruit with enormous potential for both consumers and investors.</p>
+
+      <h2>Nutritional Profile of Barhi Dates</h2>
+      <p>Fresh Barhi dates are packed with vitamin C, fiber, and essential minerals like potassium and magnesium. They provide antioxidants that support immunity, heart health, and digestion. Compared to dried dates, fresh Barhi has lower sugar content and higher water content, making it an excellent choice for health-conscious consumers.</p>
+
+      <h2>Health Benefits</h2>
+      <ul>
+        <li>Boosts immunity with high vitamin C content</li>
+        <li>Rich in antioxidants, reducing inflammation and cell damage</li>
+        <li>Supports digestive health with dietary fiber</li>
+        <li>Provides natural energy without processed sugar</li>
+        <li>Enhances skin and hair health with beta-carotene and minerals</li>
+      </ul>
+
+      <h2>Anantapur – The Perfect Home for Barhi</h2>
+      <p>Anantapur in Andhra Pradesh has emerged as a natural hub for Barhi cultivation. Its hot summers, minimal rainfall, and sandy-loam soils replicate the desert-like conditions where date palms thrive. Farmers are finding Barhi orchards to be more resilient and profitable than traditional crops, with lower risk from unpredictable weather.</p>
+
+      <h2>Investment Opportunity</h2>
+      <p>Barhi dates offer investors stable and growing returns. Mature orchards can yield 100–120 kg of fruit per tree annually. With demand rising in Indian cities and international markets, the profitability is far greater than many conventional crops. Barhi dates also require less water compared to water-intensive crops, reducing farming risks. This makes Barhi a long-term, sustainable, and high-yield investment.</p>
+
+      <h2>Conclusion</h2>
+      <p>Barhi dates are India's new golden superfruit. They deliver health benefits, consumer appeal, and high investor returns. With Anantapur positioned as the epicenter for Barhi cultivation, this crop represents a rare combination of resilience, profitability, and export potential. For consumers, it is a nutritious delicacy; for investors, it is an opportunity that pays rich dividends.</p>
     `,
-    author: "Dr. Meera Krishnan",
-    authorRole: "Sustainable Agriculture Expert",
-    publishDate: "2024-11-28",
-    readTime: "5 min read",
-    category: "Sustainability",
-    tags: ["Organic Farming", "Sustainability", "Carbon Credits", "Soil Health"],
-    image: "/assets/land-img2.jpg",
-    featured: false
-  }
+    author: 'Exora Farms Team',
+    date: '2025-08-24',
+    readTime: '4 min read',
+    category: 'Superfruit',
+    tags: ['Barhi Dates', 'Superfruit', 'Anantapur', 'Health Benefits', 'Investment Opportunity', 'Date Farming', 'Exotic Crops'],
+    image: '/assets/blog/barhi-dates-golden-superfruit.jpg',
+    featured: true,
+    seo: {
+      keywords: ['Barhi dates farming', 'golden superfruit India', 'Anantapur date cultivation', 'fresh dates investment', 'Barhi dates health benefits', 'exotic fruit farming', 'date palm investment'],
+      canonicalUrl: '/blog/barhi-dates-india-golden-superfruit-anantapur'
+    }
+  },
+  {
+    id: 'medjool-dates-king-india-export-story',
+    title: 'Medjool Dates – The King of Dates and India\'s Next Big Export Story',
+    metaTitle: 'Medjool Dates Farming in India | King of Dates Export Opportunity',
+    metaDescription: 'Explore why Medjool dates are known as the king of dates. Learn about their superfruit benefits, global demand, and how Anantapur is set to drive India\'s Medjool export future.',
+    excerpt: 'Medjool dates, often called the \'King of Dates,\' are renowned worldwide for their luxury appeal and are rapidly becoming India\'s next big export opportunity.',
+    content: `
+      <h2>Introduction</h2>
+      <p>Medjool dates, often called the 'King of Dates,' are renowned worldwide for their large size, chewy texture, and caramel-like sweetness. They are considered a luxury fruit and have rapidly gained popularity among Indian consumers and international markets alike.</p>
+
+      <h2>Nutritional Profile of Medjool Dates</h2>
+      <p>Medjool dates are nutrient-dense, providing around 277 calories per 100 g, with 7 g of fiber, and high levels of potassium, magnesium, and copper. They also contain antioxidants such as flavonoids and phenolic acids that support long-term health. Despite their sweetness, Medjools have a moderate glycemic index, making them a healthier natural sweetener option.</p>
+
+      <h2>Health Benefits</h2>
+      <ul>
+        <li>Rich in potassium for heart health</li>
+        <li>High fiber content supports digestion</li>
+        <li>Antioxidants reduce inflammation and boost immunity</li>
+        <li>Provides sustained natural energy</li>
+        <li>Supports bone health with magnesium and calcium</li>
+      </ul>
+
+      <h2>Anantapur – A Future Medjool Hub</h2>
+      <p>Anantapur's desert-like climate is perfect for Medjool cultivation. With long hot summers, low rainfall, and sandy soils, the region mirrors Middle Eastern growing conditions where Medjools have thrived for centuries. Indian farmers in Anantapur are beginning to recognize that Medjool orchards provide far higher returns than conventional crops, with consistent yields and strong market demand.</p>
+
+      <h2>Global Demand and Export Potential</h2>
+      <p>India currently imports a significant volume of Medjool dates to meet domestic demand, paying premium prices to international suppliers. By cultivating Medjools locally, regions like Anantapur can not only meet domestic demand but also become major exporters to South Asia, the Gulf, and beyond. This positions Anantapur as a potential Medjool powerhouse in South India's export story.</p>
+
+      <h2>Investment Opportunity</h2>
+      <p>Medjool dates offer one of the most attractive investment opportunities in exotic farming. Orchards require relatively low inputs once established, yet deliver yields that remain profitable for decades. With international demand expanding and health-conscious Indian consumers willing to pay premium prices, investors can expect consistent long-term returns.</p>
+
+      <h2>Conclusion</h2>
+      <p>Medjool dates are rightly called the king of dates. With unmatched taste, health benefits, and international demand, they stand out as both a superfruit and a profitable farming opportunity. Anantapur's unique climate offers the perfect platform for India to establish itself as a leading Medjool supplier. For consumers, they represent health and indulgence; for investors, they promise stability and rich dividends.</p>
+    `,
+    author: 'Exora Farms Team',
+    date: '2025-08-24',
+    readTime: '5 min read',
+    category: 'Export Agriculture',
+    tags: ['Medjool Dates', 'King of Dates', 'Export Opportunity', 'Anantapur', 'Luxury Fruit', 'Date Farming', 'Agricultural Export'],
+    image: '/assets/blog/medjool-dates-king-export.jpeg',
+    featured: true,
+    seo: {
+      keywords: ['Medjool dates farming India', 'king of dates', 'Anantapur Medjool cultivation', 'date export opportunity', 'luxury fruit farming', 'Medjool dates investment', 'agricultural export India'],
+      canonicalUrl: '/blog/medjool-dates-king-india-export-story'
+    }
+  },
+  
 ];
 
 // Function to get all blog posts
 export const getAllPosts = () => {
-  return blogPosts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+  return blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 };
 
 // Function to get featured posts
@@ -122,7 +300,7 @@ export const getFeaturedPosts = () => {
 
 // Function to get post by ID
 export const getPostById = (id) => {
-  return blogPosts.find(post => post.id === parseInt(id));
+  return blogPosts.find(post => post.id === id);
 };
 
 // Function to search posts

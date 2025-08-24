@@ -55,7 +55,7 @@ const BlogNavbar = () => {
             </div>
             <div>
               <h1 className="text-lg sm:text-xl font-black text-green-900">
-                Exotic<span className="text-emerald-600">Farming</span>
+                Exora<span className="text-emerald-600">Farms</span>
               </h1>
               <p className="text-xs text-green-600 hidden sm:block">Premium Agricultural Investment</p>
             </div>

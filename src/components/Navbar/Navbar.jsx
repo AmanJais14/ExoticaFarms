@@ -49,16 +49,7 @@ const Navbar = () => {
   };
 
   const handleVisionClick = () => {
-    // Only scroll if we're on the home page
-    if (location.pathname === '/') {
-      scrollToSection('our-vision');
-    } else {
-      // Navigate to home page first, then scroll
-      navigate('/');
-      setTimeout(() => {
-        scrollToSection('our-vision');
-      }, 100);
-    }
+    navigate('/vision');
     setIsOpen(false);
   };
 
