@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Users, Calendar, ArrowRight, Briefcase, GraduationCap } from 'lucide-react';
 // Use public paths for Next.js compatibility
 const Priyesh = '/assets/Priyesh.jpg';
@@ -14,6 +15,7 @@ const AboutMe = () => {
       name: "Mr. Nagendra Naidu",
       expertise: "Founder at Farmties India Pvt Ltd, IIM Mumbai",
       image: `${Nagendra}`,
+      companyLogo: "/assets/logos/farmties.jpg",
       education: "IIM Bangalore, CA, CFA",
       experience: "10+ years in Agriculture",
       specialization: "Agricultural finance and risk management",
@@ -24,6 +26,7 @@ const AboutMe = () => {
       name: "Mr. Sunil Pandey",
       expertise: "Partner at Perfect Neighbourhood",
       image: `${Sunil}`,
+      companyLogo: "/assets/logos/pnh.png",
       education: "IIM Ahmedabad, B.Tech Agriculture",
       experience: "10+ years in Real Estate",
       specialization: "Precision farming and crop optimization",
@@ -109,6 +112,20 @@ const AboutMe = () => {
                   <p className="text-black font-medium text-xs mb-2">
                     {founder.expertise}
                   </p>
+
+                  {/* Company Logo */}
+                  <div className="mt-3 flex justify-center">
+                    <div className="bg-white rounded-lg p-2 shadow-sm border border-gray-100">
+                      <Image
+                        src={founder.companyLogo}
+                        alt={`${founder.name} company logo`}
+                        width={70}
+                        height={40}
+                        className="h-8 w-auto object-contain"
+                      />
+                    </div>
+                  </div>
+
                   {/* <p className="text-green-700 text-sm leading-relaxed">
                     {founder.specialization}
                   </p> */}

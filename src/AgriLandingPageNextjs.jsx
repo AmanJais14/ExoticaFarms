@@ -51,6 +51,7 @@ const img2 = "/assets/gallery2/img2.jpg";
 const img3 = "/assets/gallery2/img3.jpg";
 const img4 = "/assets/gallery2/img4.jpg";
 const img5 = "/assets/gallery2/img5.png";
+const img6 = "/assets/product/img1.jpg";
 // Use public paths for videos in Next.js
 const vdo1 = "/assets/gallery2/vdo1.mp4";
 const vdo2 = "/assets/gallery2/vdo2.mp4";
@@ -58,6 +59,11 @@ const vdo3 = "/assets/gallery2/vdo3.mp4";
 const vdo4 = "/assets/gallery2/vdo4.mp4";
 const vdo6 = "/assets/gallery2/vdo6.mp4";
 const vdo7 = "/assets/gallery2/vdo7.mp4";
+const vdo8 = "/assets/gallery2/vdo8.mp4";
+const vdo9 = "/assets/gallery2/vdo9.mp4";
+const vdo10 = "/assets/gallery2/vdo10.mp4";
+const vdo11 = "/assets/product/vdo3.mp4";
+const vdo12 = "/assets/product/vdo1.mp4";
 
 const AgriLandingPage = () => {
   const [activeTab, setActiveTab] = useState("investment");
@@ -175,7 +181,7 @@ const AgriLandingPage = () => {
   // Gallery media data (4 images + 4 videos from Gallery2)
   const galleryImages = [
     {
-      src: vdo1,
+      src: vdo10,
       type: "video",
       title: "Farm Operations",
       description:
@@ -191,14 +197,20 @@ const AgriLandingPage = () => {
         "Lush green farmland with optimal soil conditions for premium crop cultivation",
     },
     {
-      src: vdo6,
+      src: vdo8,
+      type: "video",
+      title: "Farm Operations",
+      description: "Irrigation",
+    },
+    {
+      src: vdo12,
       type: "video",
       title: "Farm Operations",
       description: "Irrigation",
     },
     
     {
-      src: img2,
+      src: img6,
       type: "image",
       title: "Modern Agriculture",
       description:
@@ -245,13 +257,13 @@ const AgriLandingPage = () => {
       description:
         "Harvest operations showcasing the quality and yield of our premium crops",
     },
-    // {
-    //   src: img5,
-    //   type: "image",
-    //   title: "Premium Farmland",
-    //   description:
-    //     "Lush green farmland with optimal soil conditions for premium crop cultivation",
-    // },
+    {
+      src: vdo9,
+      type: "video",
+      title: "Premium Farmland",
+      description:
+        "Lush green farmland with optimal soil conditions for premium crop cultivation",
+    },
   ];
 
   // Gallery navigation functions
@@ -868,7 +880,8 @@ const AgriLandingPage = () => {
                   <div className="glass px-3 py-1 rounded-xl text-neutral-600 text-xs">
                     <span className="text-xs sm:text-sm text-black flex items-center gap-1">
                       {/* <div className="w-1.5 h-1.5 bg-primary-500 rounded-full animate-pulse"></div> */}
-                      Explore the pictures shot at our existing farmland project.
+                     Existing Farmties Farmland Projects at different locations.
+                      {/* Explore the pictures shot at our existing farmland project. */}
                     </span>
                   </div>
                 </div>

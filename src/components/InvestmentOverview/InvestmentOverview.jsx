@@ -17,7 +17,7 @@ const InvestmentOverview = () => {
           <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
             Your Investment at a <span className="gradient-text">Glance</span>
           </h2>
-          <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto">Transparent farmland opportunity combining land ownership & premium crop cultivation.</p>
+          <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto">Transparent farmland opportunity combining land ownership, premium crop cultivation & market linkage for fresh crops.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">

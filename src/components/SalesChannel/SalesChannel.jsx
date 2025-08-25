@@ -37,14 +37,14 @@ const SalesChannel = () => {
       description: "Premium fresh produce delivery",
       color: "from-blue-500 to-cyan-500"
     },
-    {
-      id: 7,
-      name: "Amazon fresh",
-      category: "International",
-      logo: "https://images.seeklogo.com/logo-png/38/1/amazon-fresh-logo-png_seeklogo-386992.png", // Replace with actual logo
-      description: "Premium export to Middle East & Europe",
-      color: "from-yellow-500 to-orange-500"
-    },
+    // {
+    //   id: 7,
+    //   name: "Amazon fresh",
+    //   category: "International",
+    //   logo: "https://logos-world.net/wp-content/uploads/2020/08/Amazon-Fresh-Logo.png",
+    //   description: "Premium export to Middle East & Europe",
+    //   color: "from-yellow-500 to-orange-500"
+    // },
     {
       id: 9,
       name: "Country Delight",

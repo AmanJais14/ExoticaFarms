@@ -107,10 +107,10 @@ const OurInvestors = () => {
         {/* Section Header */}
         <div className="text-center mb-8 animate-fade-in">
           <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
-            Our <span className="gradient-text">Investors</span>
+            Farmties'<span className="gradient-text"> Investors</span>
           </h2>
           <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto">
-            Our investors are from these leading companies and organizations.
+            Investors at Farmties are from these leading companies and organizations.
           </p>
         </div>
 

@@ -9,6 +9,9 @@ const nextConfig = {
     optimizePackageImports: ['lucide-react'],
   },
 
+  // Allow cross-origin requests in development
+  allowedDevOrigins: ['172.20.10.6'],
+
   // Image optimization for LCP improvement
   images: {
     formats: ['image/webp', 'image/avif'],
