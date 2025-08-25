@@ -28,7 +28,7 @@ const landImg19 = '/assets/land-img19.png';
 const prodImg1 = '/assets/product/img1.jpg';
 const prodImg2 = '/assets/product/img3.jpg';
 const prodImg3 = '/assets/product/img4.jpg';
-const prodImg4 = '/assets/product/img5.jpg';
+const prodImg4 = '/assets/product/img5.png';
 
 
 
