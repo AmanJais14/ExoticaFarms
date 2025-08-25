@@ -53,7 +53,7 @@ const InvestmentLandscape = ({ activeCard, setActiveCard }) => {
           <h2 className="text-lg sm:text-xl md:text-2xl font-black text-green-900 mb-1">
             Investment <span className="gradient-text">Asset classes</span>
           </h2>
-          <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto px-2 sm:px-0">How Indians invest and why Exotic Farming with Demand linked investments outperforms traditional investments.</p>
+          <p className="text-xs sm:text-sm text-black max-w-3xl mx-auto px-2 sm:px-0">How Indians invest and why Exotic Farming with Demand linked investments outperforms traditional investments.</p>
         </div>
 
         <div className="max-w-5xl mx-auto px-2 sm:px-4 md:px-0">
