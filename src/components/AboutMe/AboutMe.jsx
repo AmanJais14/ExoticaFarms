@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Users, Calendar, ArrowRight, Briefcase, GraduationCap } from 'lucide-react';
+import { Users } from 'lucide-react';
 // Use public paths for Next.js compatibility
 const Priyesh = '/assets/Priyesh.jpg';
 const Sunil = '/assets/SunilPandey.jpg';
@@ -13,7 +13,7 @@ const AboutMe = () => {
     {
       id: 2,
       name: "Mr. Nagendra Naidu",
-      expertise: "Founder at Farmties India Pvt Ltd, IIM Mumbai",
+      expertise: "Founder at Farmties, IIM Mumbai",
       image: `${Nagendra}`,
       companyLogo: "/assets/logos/farmties.jpg",
       education: "IIM Bangalore, CA, CFA",
@@ -32,17 +32,12 @@ const AboutMe = () => {
       specialization: "Precision farming and crop optimization",
       achievements: ["Led 50+ successful farm projects", "Expert in sustainable agriculture", "Technology integration specialist"]
     },
-    
-    // {
-    //   id: 3,
-    //   name: "Mr. Priyesh Jaiswal",
-    //   expertise: "Advisor, IIM Mumbai",
-    //   image: `${Priyesh}`,
-    //   education: "IIM Calcutta, M.Sc. Agriculture",
-    //   experience: "15+ years in Farm Operations",
-    //   specialization: "Large-scale farm management and operations",
-    //   achievements: ["Managed 1000+ acres farmland", "Crop yield optimization expert", "Supply chain management"]
-    // }
+    {
+      id: 3,
+      type: "mentorship",
+      title: "Strategic Mentorship",
+      description: "...Mentored by business leaders from Flipkart, Samsung, and EXL, bringing an experience of strategy, execution & scale"
+    }
   ];
 
   return (
@@ -62,74 +57,62 @@ const AboutMe = () => {
             <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
               Who <span className="gradient-text">are We</span>
             </h2>
-            <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto leading-relaxed">
-              Our leadership blends decades of expertise in agriculture & real estate to deliver exceptional investments.
+            <p className="text-sm text-black max-w-2xl mx-auto leading-relaxed">
+              Our leadership blends decades of expertise in agriculture & real estate to deliver exceptional ROI.
             </p>
           </div>
 
           {/* Founders Grid */}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {founders.map((founder, index) => (
               <div
                 key={founder.id}
-                className="group rounded-3xl shadow-lg border border-green-200/50 hover:shadow-xl transition-all duration-300 hover:scale-105 p-6 text-center animate-scale-in"
+                className="group rounded-3xl shadow-lg border border-green-200/50 hover:shadow-xl transition-all duration-300 hover:scale-105 p-6 text-center animate-scale-in min-h-[90px] flex flex-col"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                {/* Founder Image */}
-                <div className="relative mb-4">
-                  <div className="relative w-24 h-24 mx-auto">
-                    <div className="w-full h-full rounded-full shadow-lg border border-green-200/50 relative overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                      {/* Actual founder image */}
-                      <img
-                        src={founder.image}
-                        alt={founder.name}
-                        className="w-full h-full object-cover rounded-full"
-                        loading="lazy"
-                      />
-
-                      {/* Overlay for better contrast */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-green-900/20 to-transparent rounded-full"></div>
-
-                      {/* Decorative elements */}
-                      <div className="absolute top-2 right-2 w-4 h-4 bg-gradient-to-br from-green-400/30 to-emerald-400/30 rounded-full"></div>
-                      <div className="absolute bottom-2 left-2 w-3 h-3 bg-gradient-to-br from-emerald-400/30 to-green-500/30 rounded-full"></div>
-                    </div>
-
-                    {/* Floating accent elements */}
-                    <div className="absolute -top-2 -left-2 w-8 h-8 bg-gradient-to-br from-green-400/20 to-emerald-400/20 rounded-full blur-lg"></div>
-                    <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-to-br from-emerald-400/20 to-green-500/20 rounded-full blur-lg"></div>
+                {founder.type === 'mentorship' ? (
+                  /* Mentorship Card Content */
+                  <div className="flex flex-col justify-center items-center h-full">
+                    {/* <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                      <Users className="w-8 h-8 text-white" />
+                    </div> */}
+                    {/* <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                      {founder.title}
+                    </h3> */}
+                    <p className="text-black text-center font-medium text-xs">
+                      Mentored by business leaders from Flipkart, Samsung, and EXL, bringing an experience of <em>strategy, execution & scale</em>
+                    </p>
                   </div>
-                </div>
+                ) : (
+                  /* Founder Card Content */
+                  <>
+                    {/* Founder Info */}
+                    <div className="mb-4 flex-grow">
+                      <h3 className="text-base font-medium text-black mb-2 group-hover:text-gray-700 transition-colors duration-300">
+                        {founder.name}
+                      </h3>
+                      <p className="text-xs font-normal text-green-700 group-hover:text-green-600 transition-colors duration-300">
+                        {founder.experience}
+                      </p>
+                      <p className="text-black font-medium text-xs ">
+                        {founder.expertise}
+                      </p>
 
-                {/* Founder Info */}
-                <div className="mb-4">
-                  <h3 className="text-base font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300">
-                    {founder.name}
-                  </h3>
-                  <p className="text-xs font-normal text-green-700  group-hover:text-green-600 transition-colors duration-300">
-                    {founder.experience}
-                  </p>
-                  <p className="text-black font-medium text-xs mb-2">
-                    {founder.expertise}
-                  </p>
-
-                  {/* Company Logo */}
-                  <div className="mt-3 flex justify-center">
-                    <div className="bg-white rounded-lg p-2 shadow-sm border border-gray-100">
-                      <Image
-                        src={founder.companyLogo}
-                        alt={`${founder.name} company logo`}
-                        width={70}
-                        height={40}
-                        className="h-8 w-auto object-contain"
-                      />
+                      {/* Company Logo */}
+                      {/* <div className="mt-3 flex justify-center">
+                        <div className="bg-white rounded-lg p-2 shadow-sm border border-gray-100">
+                          <Image
+                            src={founder.companyLogo}
+                            alt={`${founder.name} company logo`}
+                            width={70}
+                            height={40}
+                            className="h-8 w-auto object-contain"
+                          />
+                        </div>
+                      </div> */}
                     </div>
-                  </div>
-
-                  {/* <p className="text-green-700 text-sm leading-relaxed">
-                    {founder.specialization}
-                  </p> */}
-                </div>
+                  </>
+                )}
 
                 {/* Experience & Education */}
                 {/* <div className="space-y-4 mb-6">

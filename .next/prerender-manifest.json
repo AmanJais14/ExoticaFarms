@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/blog/exotic-farming-new-asset-class-india":{},"/blog/exotic-farmlands-future-diversification":{},"/blog/dates-avocados-exotic-farming-anantapur":{},"/blog/barhi-dates-india-golden-superfruit-anantapur":{},"/blog/medjool-dates-king-india-export-story":{}},"dynamicRoutes":{"/blog/[id]":{"fallback":null}},"notFoundRoutes":[],"preview":{"previewModeId":"9d3e51919e757037a487dfa50e66f90a","previewModeSigningKey":"44c2455248d51fe3e5b8ea54f7b5c0dbad8ce065a88bbc77eb7c0744e319de9e","previewModeEncryptionKey":"fdd6927c5dcfceac2c6aa4bd399a2fda7ce803344d38e8ed9f253b8d14dc80a8"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "674055c8a99eb409711379b87e4b5224",
+    "previewModeSigningKey": "c92d56225955b6523f8fcbe80f3d50c74b10bb7c7fdbc22a4dcb57c4690bfc9b",
+    "previewModeEncryptionKey": "05fbeabb7732acedeebbdd98770a920e7ce57464211b9f3fd3e8aae13a7767a7"
+  }
+}

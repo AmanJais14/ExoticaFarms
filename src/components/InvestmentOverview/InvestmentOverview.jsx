@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { MapPin, TrendingUp, Shield, CheckCircle } from 'lucide-react';
 
 const InvestmentOverview = () => {
@@ -103,8 +104,17 @@ const InvestmentOverview = () => {
                 </div>
 
                 <div className="relative flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span className="font-bold text-emerald-600 text-xs">Farmties</span>
+                  {/* <CheckCircle className="w-4 h-4 text-green-500" /> */}
+                  {/* <span className="font-bold text-emerald-600 text-xs">Farmties</span> */}
+                  <div className="bg-white rounded-md p-1 shadow-sm border border-gray-100">
+                    <Image
+                      src="/assets/logos/farmties.jpg"
+                      alt="Farmties logo"
+                      width={40}
+                      height={20}
+                      className="h-4 w-auto object-contain"
+                    />
+                  </div>
                   {/* Premium badge */}
                   {/* <div className="bg-gradient-to-r from-emerald-500 to-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-md">
                     PREMIUM

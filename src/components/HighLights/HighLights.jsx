@@ -87,11 +87,11 @@ const HighLights = () => {
     //   alt: "Advanced irrigation systems",
     //   location: "Punjab, India"
     // },
-    {
-      src: img4,
-      alt: "Modern agricultural operations",
-      location: "Tamil Nadu, India"
-    },
+    // {
+    //   src: img4,
+    //   alt: "Modern agricultural operations",
+    //   location: "Tamil Nadu, India"
+    // },
     {
       src: landImg19,
       alt: "Organic farming techniques",
@@ -146,11 +146,11 @@ const HighLights = () => {
     //   alt: "Premium agricultural infrastructure",
     //   location: "Telangana, India"
     // },
-    {
-      src: prodImg3,
-      alt: "Premium agricultural infrastructure",
-      location: "Telangana, India"
-    },
+    // {
+    //   src: prodImg3,
+    //   alt: "Premium agricultural infrastructure",
+    //   location: "Telangana, India"
+    // },
     {
       src: prodImg2,
       alt: "Premium agricultural infrastructure",
@@ -330,7 +330,7 @@ const HighLights = () => {
 
               <p className="text-black text-[0.9rem] leading-relaxed text-left">
                 {/* We grow premium crops like fresh dates and avocados, often selling for twice the price of regular fruits. The yield is already sold through quick-commerce platforms and leading retail channels, with exports planned soon. Investors receive tax-free annual dividends from 3rd year and 8–12% yearly land appreciation, with all operations managed by our expert team. */}
-                    Launched by <span className='font-extrabold text-emerald-600'>Perfect Neighbourhood </span>in collaboration with Farmties, we grow high-value crops like <span className='font-extrabold text-emerald-600'> fresh dates and avocados </span>and mastered the value chain in connecting supply - demand through quick-commerce platforms like <span className='font-extrabold text-emerald-600'>BlinkIt, Zepto, Swiggy, Country Delight.</span>
+                    Launched by <span className='font-extrabold text-emerald-600'>Perfect Neighbourhood </span>in collaboration with <span className='font-extrabold text-emerald-600'>Farmties</span>, we grow high-value crops like <span className='font-extrabold text-emerald-600'> fresh dates and avocados </span>and mastered the value chain in connecting supply - demand through quick-commerce platforms like <span className='font-extrabold text-emerald-600'>BlinkIt, Zepto, Swiggy, Country Delight.</span>
 
               </p>
 

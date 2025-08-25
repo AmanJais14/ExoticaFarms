@@ -110,7 +110,7 @@ const OurInvestors = () => {
             Our<span className="gradient-text"> Investors</span>
           </h2>
           <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto">
-            Investors at Farmties are from these leading companies and organizations.
+            Investors at Farmties are from these leading companies.
           </p>
         </div>
 
