@@ -29,6 +29,7 @@ const prodImg1 = '/assets/product/img1.jpg';
 const prodImg2 = '/assets/product/img3.jpg';
 const prodImg3 = '/assets/product/img4.jpg';
 const prodImg4 = '/assets/product/img5.png';
+const prodImg5 = '/assets/product/img5.jpg';
 
 
 
@@ -76,11 +77,11 @@ const HighLights = () => {
       alt: "High-value agricultural land",
       location: "Gujarat, India"
     },
-    // {
-    //   src: landImg5,
-    //   alt: "Professional farming operations",
-    //   location: "Haryana, India"
-    // },
+    {
+      src: prodImg5,
+      alt: "Professional farming operations",
+      location: "Haryana, India"
+    },
     // {
     //   src: landImg6,
     //   alt: "Advanced irrigation systems",
@@ -323,13 +324,13 @@ const HighLights = () => {
                </p>
               <p className="text-black text-[0.9rem] leading-relaxed text-left">
                 {/* This is an exotic farming opportunity with a proven product–market fit in the last 7 years of Bengaluru -Anantapur corridor, now being launched exclusively by <span className="font-extrabold text-emerald-600">Perfect neighbourhood.</span> It offers <span className="font-extrabold text-emerald-600">strong portfolio diversification </span> by adding a high-yield, tangible asset class to traditional investments. */}
-                    Located at 97km from Bengaluru Airport, Exora Farms offers expert managed <span className = "font-extrabold text-emerald-600">community</span> farmlands spread across 200 acres. Backed by 8 years of proven success in developing revenue generating exotic farms that beats rental incomes and housing appreciation, this is your chance to be part of this asset class of exotic farming opportunity that’s growing fast.
+                    Located at ~100km from Bengaluru Airport, Exora Farms offers expert managed <span className = "font-extrabold text-emerald-600">community</span> farmlands spread across 200 acres. Backed by 8 years of proven success in developing <span className='font-extrabold text-emerald-600'>revenue generating </span> exotic farms that beats rental incomes and housing appreciation, this is your chance to be part of this asset class of exotic farming opportunity that’s growing fast.
 
               </p>
 
               <p className="text-black text-[0.9rem] leading-relaxed text-left">
                 {/* We grow premium crops like fresh dates and avocados, often selling for twice the price of regular fruits. The yield is already sold through quick-commerce platforms and leading retail channels, with exports planned soon. Investors receive tax-free annual dividends from 3rd year and 8–12% yearly land appreciation, with all operations managed by our expert team. */}
-                    Launched by Perfect Neighbourhood in collaboration with Farmties, we grow high-value crops like <span className='font-extrabold text-emerald-600'> fresh dates and avocados</span>and mastered the value chain in connecting supply - demand through quick-commerce platforms like <span className='font-extrabold text-emerald-600'>BlinkIt, Zepto, Swiggy, Country Delight.</span>
+                    Launched by <span className='font-extrabold text-emerald-600'>Perfect Neighbourhood </span>in collaboration with Farmties, we grow high-value crops like <span className='font-extrabold text-emerald-600'> fresh dates and avocados </span>and mastered the value chain in connecting supply - demand through quick-commerce platforms like <span className='font-extrabold text-emerald-600'>BlinkIt, Zepto, Swiggy, Country Delight.</span>
 
               </p>
 

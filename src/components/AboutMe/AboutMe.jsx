@@ -26,7 +26,7 @@ const AboutMe = () => {
       name: "Mr. Sunil Pandey",
       expertise: "Partner at Perfect Neighbourhood",
       image: `${Sunil}`,
-      companyLogo: "/assets/logos/pnh.png",
+      companyLogo: "/assets/logos/pnh.jpg",
       education: "IIM Ahmedabad, B.Tech Agriculture",
       experience: "10+ years in Real Estate",
       specialization: "Precision farming and crop optimization",
