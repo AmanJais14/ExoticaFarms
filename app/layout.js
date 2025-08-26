@@ -26,7 +26,7 @@ export const metadata = {
     'farm investment schemes',
     'agricultural property investment'
   ].join(', '),
-  authors: [{ name: 'Exora Farms', url: 'https://exoticafarming.com' }],
+  authors: [{ name: 'Exora Farms', url: 'https://exora.co.in' }],
   creator: 'Exora Farms',
   publisher: 'Exora Farms',
   formatDetection: {
@@ -34,7 +34,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://exoticafarming.com'),
+  metadataBase: new URL('https://exora.co.in'),
   alternates: {
     canonical: '/',
   },
@@ -43,7 +43,7 @@ export const metadata = {
     description: 'Invest in premium agricultural real estate with guaranteed 12-18% annual returns. Professional management, sustainable farming, tax-free dividends.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://exoticafarming.com',
+    url: 'https://exora.co.in',
     siteName: 'Exora Farms',
     images: [
       {
@@ -59,8 +59,8 @@ export const metadata = {
     title: 'Exora Farms - Premium Agricultural Real Estate Investment',
     description: 'Invest in premium agricultural real estate with guaranteed 12-18% annual returns. Professional management, sustainable farming, tax-free dividends.',
     images: ['/assets/hero/farm5.jpg'],
-    creator: '@exoticafarming',
-    site: '@exoticafarming',
+    creator: '@exorafarms',
+    site: '@exorafarms',
   },
   robots: {
     index: true,
@@ -89,14 +89,14 @@ export default function RootLayout({ children }) {
     "name": "Exora Farms",
     "alternateName": "Exotica Farming",
     "description": "Premium agricultural real estate investment opportunities with guaranteed 12-18% annual returns and sustainable farming practices.",
-    "url": "https://exoticafarming.com",
+    "url": "https://exora.co.in",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://exoticafarming.com/assets/logo.png",
+      "url": "https://exora.co.in/assets/logo.png",
       "width": 300,
       "height": 100
     },
-    "image": "https://exoticafarming.com/assets/hero/farm5.jpg",
+    "image": "https://exora.co.in/assets/hero/farm5.jpg",
     "foundingDate": "2020",
     "founder": {
       "@type": "Person",
@@ -125,10 +125,10 @@ export default function RootLayout({ children }) {
       }
     ],
     "sameAs": [
-      "https://facebook.com/exoticafarming",
-      "https://twitter.com/exoticafarming",
-      "https://linkedin.com/company/exoticafarming",
-      "https://instagram.com/exoticafarming"
+      "https://facebook.com/exorafarms",
+      "https://twitter.com/exorafarms",
+      "https://linkedin.com/company/exorafarms",
+      "https://instagram.com/exorafarms"
     ],
     "serviceArea": {
       "@type": "Country",
@@ -154,7 +154,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Exora Farms",
-    "url": "https://exoticafarming.com",
+    "url": "https://exora.co.in",
     "description": "Premium agricultural real estate investment platform",
     "publisher": {
       "@type": "Organization",
@@ -162,7 +162,7 @@ export default function RootLayout({ children }) {
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://exoticafarming.com/search?q={search_term_string}",
+      "target": "https://exora.co.in/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

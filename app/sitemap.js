@@ -1,7 +1,7 @@
 import { getAllPosts } from '../src/data/blogData'
 
 export default function sitemap() {
-  const baseUrl = 'https://exoticafarming.com'
+  const baseUrl = 'https://exora.co.in'
 
   // Get all blog posts for dynamic URLs
   const posts = getAllPosts()

@@ -35,7 +35,7 @@ export default function robots() {
         disallow: '/',
       },
     ],
-    sitemap: 'https://exoticafarming.com/sitemap.xml',
-    host: 'https://exoticafarming.com',
+    sitemap: 'https://exora.co.in/sitemap.xml',
+    host: 'https://exora.co.in',
   }
 }

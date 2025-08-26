@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Exora Farms | A Dividend Paying Farm',
     description: 'Transform your investment portfolio with premium farmland investments and exotic farming opportunities.',
     type: 'website',
-    url: 'https://exoticafarms.in',
+    url: 'https://exorafarms.co.in',
     images: [
       {
         url: '/assets/hero/farm5.jpg',
@@ -22,7 +22,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Exora Farms | A Dividend Paying Farm',
     description: 'Transform your investment portfolio with premium farmland investments and exotic farming opportunities.',
-    images: ['/assets/og-image.jpg'],
+    images: ['/assets/hero/farm5.jpg'],
   },
 }
 

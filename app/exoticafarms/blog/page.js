@@ -16,13 +16,13 @@ export const metadata = {
     'precision farming'
   ].join(', '),
   alternates: {
-    canonical: '/exoticafarms/blog',
+    canonical: '/exorafarms/blog',
   },
   openGraph: {
     title: 'Agricultural Investment Blog - Expert Insights & Market Analysis',
     description: 'Discover the latest insights on agricultural real estate investment, exotic farming trends, and sustainable agriculture practices.',
     type: 'website',
-    url: 'https://exoticafarming.com/exoticafarms/blog',
+    url: 'https://exora.co.in/exorafarms/blog',
     siteName: 'Exora Farms',
     images: [
       {
@@ -39,8 +39,8 @@ export const metadata = {
     title: 'Agricultural Investment Blog - Expert Insights & Market Analysis',
     description: 'Discover the latest insights on agricultural real estate investment, exotic farming trends, and sustainable agriculture practices.',
     images: ['/assets/hero/farm5.jpg'],
-    creator: '@exoticafarming',
-    site: '@exoticafarming',
+    creator: '@exorafarms',
+    site: '@exorafarms',
   },
   robots: {
     index: true,

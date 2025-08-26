@@ -57,7 +57,7 @@ const AboutMe = () => {
             <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
               Who <span className="gradient-text">are We</span>
             </h2>
-            <p className="text-sm text-black max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto leading-relaxed">
               Our leadership blends decades of expertise in agriculture & real estate to deliver exceptional ROI.
             </p>
           </div>
@@ -80,7 +80,7 @@ const AboutMe = () => {
                       {founder.title}
                     </h3> */}
                     <p className="text-black text-center font-medium text-xs">
-                      Mentored by business leaders from Flipkart, Samsung, and EXL, bringing an experience of <em>strategy, execution & scale</em>
+                      ...Mentored by business leaders from Flipkart (IIM-M) & EXL (IIM-A), bringing an experience of <em>execution excellence & scale</em>
                     </p>
                   </div>
                 ) : (

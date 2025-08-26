@@ -102,10 +102,10 @@ const DividendsClubHome = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/exoticafarms" className="text-gray-300 hover:text-white transition-colors font-medium">
+              <Link href="/" className="text-gray-300 hover:text-white transition-colors font-medium">
                 Exora Farms
               </Link>
-              <Link href="/exoticafarms/blog" className="text-gray-300 hover:text-white transition-colors font-medium">
+              <Link href="/blog" className="text-gray-300 hover:text-white transition-colors font-medium">
                 Blog
               </Link>
               {/* <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-3 rounded-full hover:from-blue-700 hover:to-green-700 transition-colors font-semibold">
@@ -411,7 +411,7 @@ We specialize in discovering and designing investible businesses across high-gro
         {/* CTA Button - Centered below Flagship Section */}
         <div className="text-center py-12">
           <Link
-            href="/exoticafarms"
+            href="/exorafarms"
             className="group inline-flex text-xs items-center gap-4 bg-gradient-to-r from-blue-600 via-blue-600 to-purple-600 text-white px-8 py-5 rounded-full font-bold hover:from-purple-700 hover:via-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 shadow-2xl shadow-green-500/30 border border-white/20"
           >
             <span>Explore Exora Farms</span>
@@ -760,7 +760,7 @@ We specialize in discovering and designing investible businesses across high-gro
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    href="/exoticafarms"
+                    href="/exorafarms"
                     className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center space-x-2"
                   >
                     <span>Explore Exotica Farms</span>
@@ -799,10 +799,10 @@ We specialize in discovering and designing investible businesses across high-gro
 
             {/* Navigation Links */}
             <div className="flex flex-wrap items-center gap-6">
-              <Link href="/exoticafarms" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              <Link href="/" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
                 Exora Farms
               </Link>
-              <Link href="/exoticafarms/blog" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              <Link href="/blog" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
                 Blog
               </Link>
               {/* <Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">

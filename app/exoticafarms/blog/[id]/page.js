@@ -40,13 +40,13 @@ export async function generateMetadata({ params }) {
     ].join(', '),
     authors: [{
       name: post.author,
-      url: 'https://exoticafarming.com/about'
+      url: 'https://exora.co.in/about'
     }],
     creator: post.author,
     publisher: 'Exora Farms',
     category: 'Agriculture',
     alternates: {
-      canonical: `/exoticafarms/blog/${post.id}`,
+      canonical: `/exorafarms/blog/${post.id}`,
     },
     openGraph: {
       title: post.title,
@@ -73,8 +73,8 @@ export async function generateMetadata({ params }) {
       title: post.title,
       description: cleanExcerpt,
       images: [post.image],
-      creator: '@exoticafarming',
-      site: '@exoticafarming',
+      creator: '@exorafarms',
+      site: '@exorafarms',
     },
     robots: {
       index: true,

@@ -133,19 +133,19 @@ const BlogPost = ({ params }) => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://exoticafarming.com"
+        "item": "https://exora.co.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://exoticafarming.com/blog"
+        "item": "https://exora.co.in/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://exoticafarming.com/blog/${post.id}`
+        "item": `https://exora.co.in/blog/${post.id}`
       }
     ]
   }
@@ -160,21 +160,21 @@ const BlogPost = ({ params }) => {
     "author": {
       "@type": "Person",
       "name": post.author,
-      "url": "https://exoticafarming.com/about"
+      "url": "https://exora.co.in/about"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Exora Farms",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://exoticafarming.com/assets/logo.png"
+        "url": "https://exora.co.in/assets/logo.png"
       }
     },
     "datePublished": post.date,
     "dateModified": post.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://exoticfarming.com/blog/${post.id}`
+      "@id": `https://exora.co.in/blog/${post.id}`
     },
     "articleSection": "Agriculture",
     "keywords": post.tags.join(", "),
@@ -183,7 +183,7 @@ const BlogPost = ({ params }) => {
     "isPartOf": {
       "@type": "Blog",
       "name": "Exora Farms Blog",
-      "url": "https://exoticafarming.com/blog"
+      "url": "https://exora.co.in/blog"
     }
   }
 
