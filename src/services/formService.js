@@ -10,10 +10,10 @@ const COLLECTION_NAME = 'contact_forms';
  */
 export const testFirestoreConnection = async () => {
   try {
-    console.log('🔍 Testing Firestore connection...');
-    console.log('🔍 Database instance:', db);
-    console.log('🔍 Database app:', db.app);
-    console.log('🔍 Project ID:', db.app.options.projectId);
+    // console.log('🔍 Testing Firestore connection...');
+    // console.log('🔍 Database instance:', db);
+    // console.log('🔍 Database app:', db.app);
+    // console.log('🔍 Project ID:', db.app.options.projectId);
 
     // Try to add a simple test document
     const testData = {
@@ -24,9 +24,9 @@ export const testFirestoreConnection = async () => {
       url: window.location.href
     };
 
-    console.log('🔍 Attempting to write test document...');
+    // console.log('🔍 Attempting to write test document...');
     const docRef = await addDoc(collection(db, 'test_connection'), testData);
-    console.log('✅ Firestore connection successful! Test document ID:', docRef.id);
+    // console.log('✅ Firestore connection successful! Test document ID:', docRef.id);
     return true;
   } catch (error) {
     console.error('❌ Firestore connection failed:', error);

@@ -22,7 +22,7 @@ export const metadata = {
     title: 'Agricultural Investment Blog - Expert Insights & Market Analysis',
     description: 'Discover the latest insights on agricultural real estate investment, exotic farming trends, and sustainable agriculture practices.',
     type: 'website',
-    url: 'https://exora.co.in/exorafarms/blog',
+    url: 'https://exorafarms.com/exorafarms/blog',
     siteName: 'Exora Farms',
     images: [
       {

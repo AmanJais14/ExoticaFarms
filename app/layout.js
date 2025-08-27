@@ -26,7 +26,7 @@ export const metadata = {
     'farm investment schemes',
     'agricultural property investment'
   ].join(', '),
-  authors: [{ name: 'Exora Farms', url: 'https://exora.co.in' }],
+  authors: [{ name: 'Exora Farms', url: 'https://exorafarms.com' }],
   creator: 'Exora Farms',
   publisher: 'Exora Farms',
   formatDetection: {
@@ -34,7 +34,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://exora.co.in'),
+  metadataBase: new URL('https://exorafarms.com'),
   alternates: {
     canonical: '/',
   },
@@ -43,7 +43,7 @@ export const metadata = {
     description: 'Invest in premium agricultural real estate with guaranteed 12-18% annual returns. Professional management, sustainable farming, tax-free dividends.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://exora.co.in',
+    url: 'https://exorafarms.com',
     siteName: 'Exora Farms',
     images: [
       {
@@ -89,14 +89,14 @@ export default function RootLayout({ children }) {
     "name": "Exora Farms",
     "alternateName": "Exotica Farming",
     "description": "Premium agricultural real estate investment opportunities with guaranteed 12-18% annual returns and sustainable farming practices.",
-    "url": "https://exora.co.in",
+    "url": "https://exorafarms.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://exora.co.in/assets/logo.png",
+      "url": "https://exorafarms.com/assets/logo.png",
       "width": 300,
       "height": 100
     },
-    "image": "https://exora.co.in/assets/hero/farm5.jpg",
+    "image": "https://exorafarms.com/assets/hero/farm5.jpg",
     "foundingDate": "2020",
     "founder": {
       "@type": "Person",
@@ -154,7 +154,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Exora Farms",
-    "url": "https://exora.co.in",
+    "url": "https://exorafarms.com",
     "description": "Premium agricultural real estate investment platform",
     "publisher": {
       "@type": "Organization",
@@ -162,7 +162,7 @@ export default function RootLayout({ children }) {
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://exora.co.in/search?q={search_term_string}",
+      "target": "https://exorafarms.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

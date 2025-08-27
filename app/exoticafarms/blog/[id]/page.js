@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
     ].join(', '),
     authors: [{
       name: post.author,
-      url: 'https://exora.co.in/about'
+      url: 'https://exorafarms.com/about'
     }],
     creator: post.author,
     publisher: 'Exora Farms',
