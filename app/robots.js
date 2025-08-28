@@ -13,27 +13,6 @@ export default function robots() {
           '/temp/',
         ],
       },
-      // Block AI crawlers for content protection
-      {
-        userAgent: 'GPTBot',
-        disallow: '/',
-      },
-      {
-        userAgent: 'ChatGPT-User',
-        disallow: '/',
-      },
-      {
-        userAgent: 'CCBot',
-        disallow: '/',
-      },
-      {
-        userAgent: 'anthropic-ai',
-        disallow: '/',
-      },
-      {
-        userAgent: 'Claude-Web',
-        disallow: '/',
-      },
     ],
     sitemap: 'https://exorafarms.com/sitemap.xml',
     host: 'https://exorafarms.com',
