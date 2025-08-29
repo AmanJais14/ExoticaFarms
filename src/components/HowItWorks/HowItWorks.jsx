@@ -71,7 +71,7 @@ const HowItWorks = () => {
       id: 5,
       icon: TrendingUp,
       title: "Earn Annual Dividends",
-      description: "Y3 : 6-12%\nY4 onwards: 12-18%",
+      description: "Y3 : 0-8%\nY4 onwards: 12-18%",
       duration: "Year 3+",
       // Price: "0",
       color: "from-green-600 to-green-700",
