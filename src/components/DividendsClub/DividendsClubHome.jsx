@@ -411,7 +411,7 @@ We specialize in discovering and designing investible businesses across high-gro
         {/* CTA Button - Centered below Flagship Section */}
         <div className="text-center py-12">
           <Link
-            href="/exorafarms"
+            href="/"
             className="group inline-flex text-xs items-center gap-4 bg-gradient-to-r from-blue-600 via-blue-600 to-purple-600 text-white px-8 py-5 rounded-full font-bold hover:from-purple-700 hover:via-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 shadow-2xl shadow-green-500/30 border border-white/20"
           >
             <span>Explore Exora Farms</span>
