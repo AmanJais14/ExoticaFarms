@@ -257,21 +257,28 @@ We specialize in discovering and designing investible businesses across high-gro
             <div>
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-3 relative overflow-hidden shadow-2xl shadow-blue-500/10 hover:shadow-blue-500/20 transition-all duration-500">
                 <div className="relative">
-                  {/* Video with Autoplay - Preserves Original Aspect Ratio */}
-                  <video
+                  
+                  {/* <video
                     className="w-full h-64 sm:h-80 md:h-96 lg:h-screen rounded-2xl"
                     autoPlay
                     muted
                     loop
                     playsInline
-                    // controls
+                    
                     poster="/assets/dividendsclub/land-video-poster.jpg"
                   >
                     <source src="/assets/dividendsclub/land-vdo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
-                  </video>
+                  </video> */}
+                  <img
+                    src="/assets/hero/farm5.jpg"
+                    alt="Exora Farms"
+                    className="w-full h-64 sm:h-80 md:h-96 lg:h-screen rounded-2xl"
+                    loading="lazy"
+                    
+                  />
 
-                  {/* Video Overlay */}
+                  
                   <div className="absolute top-3 sm:top-6 left-3 sm:left-6 z-20">
                     <div className="bg-black/70 backdrop-blur-md rounded-full px-3 sm:px-6 py-2 sm:py-3 flex items-center space-x-2 sm:space-x-3 border border-white/20">
                       <div className="w-2 sm:w-3 h-2 sm:h-3 bg-red-500 rounded-full animate-pulse"></div>
@@ -279,21 +286,16 @@ We specialize in discovering and designing investible businesses across high-gro
                     </div>
                   </div>
 
-                  {/* Quality Badge */}
-                  {/* <div className="absolute top-6 right-6 z-20">
-                    <div className="bg-black/70 backdrop-blur-md rounded-full px-4 py-2 border border-white/20">
-                      <span className="text-white text-xs font-bold">4K</span>
-                    </div>
-                  </div> */}
+                  
 
-                  {/* Video Gradient Overlay */}
+                  
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
 
-                  {/* Bottom Video Info */}
+                  
                   <div className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 z-20">
                     <div className="bg-black/70 backdrop-blur-md rounded-xl px-3 sm:px-6 py-2 sm:py-4 border border-white/20">
-                      {/* <h4 className="text-white font-semibold text-lg mb-1">Bangalore-Anantapur Belt</h4> */}
-                      <p className="text-gray-300 text-xs sm:text-sm">Approx. 95km from Bangalore</p>
+                      
+                      <p className="text-gray-300 text-xs sm:text-sm">Approx. 100km from Bangalore</p>
                     </div>
                   </div>
                 </div>
