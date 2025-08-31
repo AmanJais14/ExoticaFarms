@@ -117,19 +117,21 @@ const OurInvestors = () => {
         {/* Investors Logos */}
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 sm:p-12">
-            <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16 lg:grid lg:grid-cols-4 lg:gap-8 lg:justify-items-center">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-2 md:gap-8 lg:gap-8 justify-items-center">
               {investors.map((investor, index) => (
                 <div
                   key={investor.id}
-                  className="group transition-all duration-300 hover:scale-110 animate-fade-in"
+                  className="group transition-all duration-300 hover:scale-110 animate-fade-in rounded-lg border-black-100 border-2 min-w-20 max-w-28 p-1 flex items-center justify-center min-h-5"
                   style={{ animationDelay: `${index * 100}ms` }}
+                  
                 >
-                  <img
+                  {/* <img
                     src={investor.logo}
                     alt={`${investor.name} logo`}
                     className="h-10 w-20 sm:h-12 sm:w-24 md:h-14 md:w-28 object-contain group-hover:opacity-100 transition-opacity duration-300"
                     title={investor.name}
-                  />
+                  /> */}
+                  <p className="text-xs  text-gray-600  text-center">{investor.name}</p>
                 </div>
               ))}
             </div>
