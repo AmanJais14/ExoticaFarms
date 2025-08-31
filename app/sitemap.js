@@ -18,7 +18,7 @@ export default function sitemap() {
       url: `${baseUrl}/vision`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.9,
+      priority: 0.6,
     },
     {
       url: `${baseUrl}/blog`,
@@ -33,7 +33,7 @@ export default function sitemap() {
     url: `${baseUrl}/blog/${post.id}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly',
-    priority: 0.6,
+    priority: 0.9,
   }))
 
   return [...staticPages, ...blogPages]
