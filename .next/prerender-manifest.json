@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/blog/exotic-farming-new-asset-class-india":{},"/blog/exotic-farmlands-future-diversification":{},"/blog/dates-avocados-exotic-farming-anantapur":{},"/blog/barhi-dates-india-golden-superfruit-anantapur":{},"/blog/medjool-dates-king-india-export-story":{},"/blog/farmland-investment-india-metros-exora-farms-vs-timber-nifty":{}},"dynamicRoutes":{"/blog/[id]":{"fallback":null}},"notFoundRoutes":[],"preview":{"previewModeId":"efce4409fd1f75631b599045cdc3a55f","previewModeSigningKey":"6e74b5a34416c239fd1f3199ad6ff76ae05a6d1884d058d88ea6292d54ed77db","previewModeEncryptionKey":"455ca8a4b9496f5a9d1820fcbe6b5448419d5f7c107b4df4d27616fc859f819a"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "8d4911b0ece1bd933120bdf9701493ae",
+    "previewModeSigningKey": "c2303d6390fec72bd12ff76669f568dc38f9de98a25854cd47f0f5d6daf155d2",
+    "previewModeEncryptionKey": "441da009f5e5029b4e96ed914b4e80e9dfce11374ff3def98b26f497d2a17933"
+  }
+}
