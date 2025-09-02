@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { Calendar,Target, Users, Menu, X, Leaf, BookOpen } from 'lucide-react';
+import { Calendar,Target, Users, Menu, X, Leaf, BookOpen, Info } from 'lucide-react';
 import { useRouter, usePathname } from 'next/navigation';
 
 const Navbar = () => {
@@ -61,6 +61,11 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleAboutClick = () => {
+    router.push('/about');
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
@@ -86,7 +91,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2 lg:gap-3">
+          <div className="hidden lg:flex items-center gap-2 lg:gap-3">
             <button
               onClick={handleVisionClick}
               className={`flex items-center gap-2 text-green-700 hover:bg-green-50 hover:text-green-800 px-0 py-2 rounded-xl font-semibold text-sm transition-all duration-300 ${
@@ -113,6 +118,19 @@ const Navbar = () => {
               Blog
             </button>
 
+            <button
+              onClick={handleAboutClick}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                pathname === '/about'
+                  ? 'bg-green-100 text-green-700 border-2 border-green-300'
+                  : 'text-green-700 hover:bg-green-50 hover:text-green-800'
+              }`}
+              suppressHydrationWarning={true}
+            >
+              <Info className="w-4 h-4" />
+              About Us
+            </button>
+
             {/* <button
               onClick={handleInviteFriend}
               className="flex items-center gap-2 text-green-700 hover:bg-green-50 hover:text-green-800 px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300"
@@ -131,18 +149,18 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile/Tablet Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg bg-green-100 hover:bg-green-200 text-green-700 transition-colors duration-300"
+            className="lg:hidden p-2 rounded-lg bg-green-100 hover:bg-green-200 text-green-700 transition-colors duration-300"
             suppressHydrationWarning={true}
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
-        {/* Mobile Navigation Menu */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out ${
+        {/* Mobile/Tablet Navigation Menu */}
+        <div className={`lg:hidden transition-all duration-300 ease-in-out ${
           isOpen 
             ? 'max-h-96 opacity-100 pb-4' 
             : 'max-h-0 opacity-0 overflow-hidden'
@@ -170,6 +188,18 @@ const Navbar = () => {
               >
                 <BookOpen className="w-4 h-4" />
                 Blog
+              </button>
+
+              <button
+                onClick={handleAboutClick}
+                className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                  pathname === '/about'
+                    ? 'bg-green-100 text-green-700 border-2 border-green-300'
+                    : 'bg-white hover:bg-green-50 text-green-700 border-2 border-green-200 hover:border-green-300'
+                }`}
+              >
+                <Info className="w-4 h-4" />
+                About Us
               </button>
 
               <button

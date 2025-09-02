@@ -279,12 +279,12 @@ We specialize in discovering and designing investible businesses across high-gro
                   />
 
                   
-                  <div className="absolute top-3 sm:top-6 left-3 sm:left-6 z-20">
+                  {/* <div className="absolute top-3 sm:top-6 left-3 sm:left-6 z-20">
                     <div className="bg-black/70 backdrop-blur-md rounded-full px-3 sm:px-6 py-2 sm:py-3 flex items-center space-x-2 sm:space-x-3 border border-white/20">
                       <div className="w-2 sm:w-3 h-2 sm:h-3 bg-red-500 rounded-full animate-pulse"></div>
                       <span className="text-white text-xs sm:text-sm font-semibold tracking-wide">LOCATION VIEW</span>
                     </div>
-                  </div>
+                  </div> */}
 
                   
 

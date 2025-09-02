@@ -11,8 +11,9 @@ export const metadata = {
     default: 'Exora Farms - Premium Agricultural Real Estate Investment | 12-18% Annual Returns',
     template: '%s | Exora Farms'
   },
-  description: 'Invest in premium agricultural real estate with Exora Farms. Get 12-18% annual dividends from exotic farming projects. Tax-free returns, professional management, and sustainable farming practices. Starting at ₹29.9L per acre.',
+  description: 'Perfect Neighbourhood LLP presents Exora Farms - Premium agricultural real estate investment with 12-18% annual dividends. Expert real estate services, zero brokerage, and sustainable farming practices. Starting at ₹29.9L per acre.',
   keywords: [
+    'Perfect Neighbourhood LLP',
     'agricultural real estate investment',
     'farm investment opportunities',
     'exora farms',
@@ -27,18 +28,16 @@ export const metadata = {
     'farm investment schemes',
     'agricultural property investment',
     'agricultural investment platform',
+    'zero brokerage real estate',
+    'NRI property services',
+    'Bangalore real estate',
+    'alternative investment',
+    'Farmties collaboration',
     'agricultural real estate',
     'exotic farming investment',
     'agricultural land investment',
-    'sustainable farming',
-    'farmland investment India',
-    'agricultural dividends',
-    'real estate investment',
-    'premium farmland',
-    'agricultural returns',
-    'farm investment schemes',
-    'agricultural property investment',
-    'agricultural investment platform',
+    'real estate expertise',
+    'property investment Bangalore',
     'agricultural real estate investment platform',
     'exotica farms',
     'exorafarms'
@@ -103,9 +102,9 @@ export default function RootLayout({ children }) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": ["Organization", "RealEstateAgent", "FinancialService"],
-    "name": "Exora Farms",
-    "alternateName": "Exotica Farming",
-    "description": "Premium agricultural real estate investment opportunities with guaranteed 12-18% annual returns and sustainable farming practices.",
+    "name": "Perfect Neighbourhood LLP",
+    "alternateName": ["Exora Farms", "Exotica Farming"],
+    "description": "Real estate expertise meets alternative investment opportunities. We combine exclusive project access, trusted builder partnerships, and innovative investment models including Exora Farms agricultural investments.",
     "url": "https://exorafarms.com",
     "logo": {
       "@type": "ImageObject",
@@ -153,14 +152,30 @@ export default function RootLayout({ children }) {
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Agricultural Investment Services",
+      "name": "Real Estate and Investment Services",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Premium Farmland Investment",
-            "description": "Investment in exotic farming with 12-18% annual returns"
+            "name": "Premium Real Estate Services",
+            "description": "Exclusive real estate deals, zero brokerage, trusted partnerships with 10+ years experience"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Exora Farms Agricultural Investment",
+            "description": "Alternative investment in exotic farming with 12-18% annual returns"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "NRI Property Services",
+            "description": "Virtual tours, digital documentation, legal guidance, and property management support"
           }
         }
       ]
