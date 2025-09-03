@@ -126,7 +126,7 @@ const AboutUsPage = () => {
                 </h3>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                We exclusively market Exora Farms in collaboration with Farmties – a pioneering farmland investment platform that combines sustainable farming with wealth creation.
+                We exclusively market Exora Farms in collaboration with Farmties – a pioneering farmland investment opportunity that combines sustainable farming with wealth creation.
               </p>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -152,7 +152,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Our Promise Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             Our <span className="gradient-text">Promise</span>
@@ -163,7 +163,7 @@ const AboutUsPage = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Farmties Section */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
@@ -234,7 +234,7 @@ const AboutUsPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+919876543210"
+                href="tel:+919379627377"
                 className="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-300 text-sm"
               >
                 Contact Us Today
