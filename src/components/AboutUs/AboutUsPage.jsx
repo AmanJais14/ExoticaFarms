@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Navbar from '../Navbar/NavbarNextjs';
 import {
   Building2,
@@ -238,12 +239,12 @@ const AboutUsPage = () => {
               >
                 Contact Us Today
               </a>
-              <a
+              <Link
                 href="/"
                 className="border-2 border-green-600 text-green-600 px-6 py-2 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-colors duration-300 text-sm"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
