@@ -48,7 +48,7 @@ export const testFirestoreConnection = async () => {
 };
 
 /**
- * Submit contact form data to Firestore
+ * Submit contact form data to Firestore and send email notification
  * @param {Object} formData - The form data to submit
  * @returns {Promise<string>} - Document ID of the created record
  */
@@ -70,6 +70,30 @@ export const submitContactForm = async (formData) => {
     const docRef = await addDoc(collection(db, COLLECTION_NAME), submissionData);
 
     console.log('✅ Form submitted successfully with ID:', docRef.id);
+
+    // Send email notification
+    try {
+      const emailResponse = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          submissionId: docRef.id,
+        }),
+      });
+
+      if (emailResponse.ok) {
+        console.log('✅ Email notification sent successfully');
+      } else {
+        console.warn('⚠️ Email notification failed, but form was saved');
+      }
+    } catch (emailError) {
+      console.warn('⚠️ Email notification error:', emailError);
+      // Don't fail the form submission if email fails
+    }
+
     return docRef.id;
   } catch (error) {
     console.error('❌ Error submitting form:', error);

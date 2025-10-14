@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import {
   Users,
   TrendingUp,
@@ -40,6 +41,7 @@ import AnimatedCounters from "./components/common/AnimatedCounters";
 import SalesChannel from "./components/SalesChannel/SalesChannel";
 import OurInvestors from "./components/OurInvestors/OurInvestors";
 import OurVision from "./components/OurVision/OurVision";
+import PopupForm from "./components/PopupForm/PopupForm";
 
 // Use public paths for assets in Next.js
 const farm = "/assets/farm.jpg";
@@ -66,6 +68,7 @@ const vdo11 = "/assets/product/vdo3.mp4";
 const vdo12 = "/assets/product/vdo1.mp4";
 
 const AgriLandingPage = () => {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState("investment");
   const [isVisible, setIsVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -130,7 +133,6 @@ const AgriLandingPage = () => {
 
     try {
       const docId = await submitContactForm(formattedData);
-      setSubmitStatus("success");
 
       // Reset form after successful submission
       setFormData({
@@ -142,10 +144,8 @@ const AgriLandingPage = () => {
         notes: "",
       });
 
-      // Show success message for 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
+      // Redirect to thank you page
+      router.push('/thank-you');
     } catch (error) {
       console.error("Form submission error:", error);
       setSubmitStatus("error");
@@ -1817,6 +1817,9 @@ const AgriLandingPage = () => {
           activeCard={activeCard}
           setActiveCard={setActiveCard}
         />
+
+        {/* Popup Form - Shows after 5 seconds */}
+        <PopupForm delay={5000} />
         </main>
       </div>
     </>
