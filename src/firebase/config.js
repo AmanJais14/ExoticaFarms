@@ -22,11 +22,11 @@ const app = initializeApp(firebaseConfig);
 let db;
 try {
   db = getFirestore(app);
-  console.log('🔥 Firestore database initialized successfully');
-  console.log('🔥 Project ID:', firebaseConfig.projectId);
-  console.log('🔥 Database instance:', db);
+  // console.log('🔥 Firestore database initialized successfully');
+  // console.log('🔥 Project ID:', firebaseConfig.projectId);
+  // console.log('🔥 Database instance:', db);
 } catch (error) {
-  console.error('❌ Failed to initialize Firestore:', error);
+  // console.error('❌ Failed to initialize Firestore:', error);
 }
 export { db };
 
@@ -37,7 +37,7 @@ try {
     analytics = getAnalytics(app);
   }
 } catch (error) {
-  console.log('Analytics not available:', error.message);
+  // console.log('Analytics not available:', error.message);
 }
 export { analytics };
 

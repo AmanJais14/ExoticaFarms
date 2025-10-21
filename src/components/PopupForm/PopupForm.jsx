@@ -84,6 +84,28 @@ const PopupForm = ({ isOpen, onClose, delay = 5000 }) => {
     try {
       const docId = await submitContactForm(formattedData);
 
+      // Track LinkedIn conversion
+      if (typeof window !== 'undefined' && window.lintrk) {
+        window.lintrk('track', { conversion_id: 'popup_form_submission' });
+      }
+
+      // Track Google Ads conversion
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {
+          'send_to': 'AW-17078815484/popup_form_conversion',
+          'value': 1.0,
+          'currency': 'INR'
+        });
+      }
+
+      // Track Facebook conversion
+      if (typeof window !== 'undefined' && window.fbq) {
+        window.fbq('track', 'Lead', {
+          content_name: 'Popup Form Submission',
+          content_category: 'Lead Generation'
+        });
+      }
+
       // Reset form after successful submission
       setFormData({
         fullName: "",

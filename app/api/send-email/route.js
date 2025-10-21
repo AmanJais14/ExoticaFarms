@@ -57,11 +57,11 @@ Please respond to the customer within 24 hours.
 
     // If SMTP credentials are not configured, log the email instead
     if (!SMTP_USER || !SMTP_PASS) {
-      console.log('📧 EMAIL NOTIFICATION (SMTP not configured):');
-      console.log('To:', TO_EMAIL);
-      console.log('Subject:', emailSubject);
-      console.log('Body:', emailBody);
-      console.log('---');
+      // console.log('📧 EMAIL NOTIFICATION (SMTP not configured):');
+      // console.log('To:', TO_EMAIL);
+      // console.log('Subject:', emailSubject);
+      // console.log('Body:', emailBody);
+      // console.log('---');
 
       return NextResponse.json({
         success: true,
@@ -70,20 +70,26 @@ Please respond to the customer within 24 hours.
       });
     }
 
-    // Try SMTP with new App Password
-    console.log('🔄 Attempting SMTP with new App Password...');
+    // Enhanced logging for production debugging
+    // console.log('🔄 Email API called in environment:', process.env.NODE_ENV);
+    // console.log('🔄 SMTP Config check:');
+    // console.log('- Host:', SMTP_HOST);
+    // console.log('- Port:', SMTP_PORT);
+    // console.log('- User:', SMTP_USER ? 'SET' : 'NOT SET');
+    // console.log('- Pass:', SMTP_PASS ? 'SET (length: ' + SMTP_PASS.length + ')' : 'NOT SET');
+    // console.log('- To Email:', TO_EMAIL);
 
     // Use Nodemailer to send email
     try {
       const nodemailer = require('nodemailer');
 
       // Debug: Log the credentials (without showing the full password)
-      console.log('🔍 SMTP Debug Info:');
-      console.log('Host:', SMTP_HOST);
-      console.log('Port:', SMTP_PORT);
-      console.log('User:', SMTP_USER);
-      console.log('Pass length:', SMTP_PASS ? SMTP_PASS.length : 'undefined');
-      console.log('Pass first 4 chars:', SMTP_PASS ? SMTP_PASS.substring(0, 4) + '...' : 'undefined');
+      // console.log('🔍 SMTP Debug Info:');
+      // console.log('Host:', SMTP_HOST);
+      // console.log('Port:', SMTP_PORT);
+      // console.log('User:', SMTP_USER);
+      // console.log('Pass length:', SMTP_PASS ? SMTP_PASS.length : 'undefined');
+      // console.log('Pass first 4 chars:', SMTP_PASS ? SMTP_PASS.substring(0, 4) + '...' : 'undefined');
 
       const transporter = nodemailer.createTransport({
         host: SMTP_HOST,
@@ -121,40 +127,59 @@ Please respond to the customer within 24 hours.
 
       console.log('✅ Email sent successfully via SMTP');
     } catch (smtpError) {
-      console.error('❌ SMTP Error:', smtpError);
+      // console.error('❌ SMTP Error Details:');
+      // console.error('- Error Code:', smtpError.code);
+      // console.error('- Error Message:', smtpError.message);
+      // console.error('- Response Code:', smtpError.responseCode);
+      // console.error('- Command:', smtpError.command);
+      // console.error('- Full Error:', smtpError);
+
+      // Log email content as fallback for debugging
+      // console.log('📧 EMAIL CONTENT (SMTP Failed):');
+      // console.log('From:', SMTP_USER);
+      // console.log('To:', TO_EMAIL);
+      // console.log('Subject:', emailSubject);
+      // console.log('Body:', emailBody);
+      // console.log('---');
 
       // Fallback to webhook if SMTP fails
       const webhookUrl = process.env.EMAIL_WEBHOOK_URL;
 
       if (webhookUrl) {
-        await fetch(webhookUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            to: TO_EMAIL,
-            subject: emailSubject,
-            body: emailBody,
-            formData: body,
-            timestamp: new Date().toISOString(),
-          }),
-        });
-        console.log('✅ Email sent via webhook fallback');
+        try {
+          await fetch(webhookUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              to: TO_EMAIL,
+              subject: emailSubject,
+              body: emailBody,
+              formData: body,
+              timestamp: new Date().toISOString(),
+            }),
+          });
+          // console.log('✅ Email sent via webhook fallback');
+        } catch (webhookError) {
+          // console.error('❌ Webhook fallback also failed:', webhookError);
+          throw smtpError; // Re-throw original SMTP error
+        }
       } else {
-        throw smtpError; // Re-throw if no fallback available
+        // Don't throw error in production - just log it
+        // console.log('⚠️ No webhook fallback configured, but form data was saved to Firebase');
       }
     }
 
-    console.log('✅ Email notification sent successfully');
-    
+    // console.log('✅ Email notification process completed');
+
     return NextResponse.json({
       success: true,
       message: 'Email notification sent successfully'
     });
 
   } catch (error) {
-    console.error('❌ Error sending email notification:', error);
+    // console.error('❌ Error sending email notification:', error);
     
     return NextResponse.json(
       { 

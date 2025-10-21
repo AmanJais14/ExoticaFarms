@@ -111,7 +111,8 @@ const ThankYouPage = () => {
               className="flex items-center text-gray-600 hover:text-green-600 transition-colors"
             >
               <Mail className="w-4 h-4 mr-2" />
-              info@exorafarms.co.in
+              {/* info@exorafarms.co.in */}
+              perfectneighbourhoodllp@gmail.com
             </a>
           </div>
         </div>

@@ -29,18 +29,18 @@ export const testFirestoreConnection = async () => {
     // console.log('✅ Firestore connection successful! Test document ID:', docRef.id);
     return true;
   } catch (error) {
-    console.error('❌ Firestore connection failed:', error);
-    console.error('❌ Error code:', error.code);
-    console.error('❌ Error message:', error.message);
-    console.error('❌ Full error object:', error);
+    // console.error('❌ Firestore connection failed:', error);
+    // console.error('❌ Error code:', error.code);
+    // console.error('❌ Error message:', error.message);
+    // console.error('❌ Full error object:', error);
 
     // Check for specific error types
     if (error.code === 'permission-denied') {
-      console.error('❌ This is a permission error - check your Firestore security rules');
+      // console.error('❌ This is a permission error - check your Firestore security rules');
     } else if (error.code === 'not-found') {
-      console.error('❌ Database not found - make sure Firestore is enabled in your Firebase project');
+      // console.error('❌ Database not found - make sure Firestore is enabled in your Firebase project');
     } else if (error.code === 'unavailable') {
-      console.error('❌ Service unavailable - check your internet connection and Firebase status');
+      // console.error('❌ Service unavailable - check your internet connection and Firebase status');
     }
 
     return false;
@@ -64,12 +64,12 @@ export const submitContactForm = async (formData) => {
       source: 'website'
     };
 
-    console.log('Formatted submission data:', submissionData);
+    // console.log('Formatted submission data:', submissionData);
 
     // Add document to Firestore
     const docRef = await addDoc(collection(db, COLLECTION_NAME), submissionData);
 
-    console.log('✅ Form submitted successfully with ID:', docRef.id);
+    // console.log('✅ Form submitted successfully with ID:', docRef.id);
 
     // Send email notification
     try {
@@ -85,21 +85,21 @@ export const submitContactForm = async (formData) => {
       });
 
       if (emailResponse.ok) {
-        console.log('✅ Email notification sent successfully');
+        // console.log('✅ Email notification sent successfully');
       } else {
-        console.warn('⚠️ Email notification failed, but form was saved');
+        // console.warn('⚠️ Email notification failed, but form was saved');
       }
     } catch (emailError) {
-      console.warn('⚠️ Email notification error:', emailError);
+      // console.warn('⚠️ Email notification error:', emailError);
       // Don't fail the form submission if email fails
     }
 
     return docRef.id;
   } catch (error) {
-    console.error('❌ Error submitting form:', error);
-    console.error('Error code:', error.code);
-    console.error('Error message:', error.message);
-    console.error('Error details:', error);
+    // console.error('❌ Error submitting form:', error);
+    // console.error('Error code:', error.code);
+    // console.error('Error message:', error.message);
+    // console.error('Error details:', error);
 
     // Provide more specific error messages
     if (error.code === 'permission-denied') {
