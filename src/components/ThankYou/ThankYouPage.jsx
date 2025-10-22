@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import { CheckCircle, Home, MessageCircle, Calendar, ArrowRight, Phone, Mail } from 'lucide-react';
 
 const ThankYouPage = () => {
@@ -10,6 +11,13 @@ const ThankYouPage = () => {
   useEffect(() => {
     // Trigger animation after component mounts
     setIsVisible(true);
+
+    // Track Google Ads conversion on thank you page load
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17078815484/lFbcCJ3DvrEbEPyV6M8_'
+      });
+    }
   }, []);
 
   const handleWhatsAppClick = () => {
@@ -19,7 +27,20 @@ const ThankYouPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 flex items-center justify-center px-4">
+    <>
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {'send_to': 'AW-17078815484/lFbcCJ3DvrEbEPyV6M8_'});
+              }
+            `,
+          }}
+        />
+      </Head>
+
+      <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 flex items-center justify-center px-4">
       <div className="max-w-2xl mx-auto text-center">
         {/* Success Icon */}
         <div className={`mb-8 transform transition-all duration-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
@@ -136,6 +157,7 @@ const ThankYouPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
