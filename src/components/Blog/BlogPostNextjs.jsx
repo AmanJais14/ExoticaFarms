@@ -208,10 +208,10 @@ const BlogPost = ({ params }) => {
       <BlogNavbar />
 
       {/* Hero Section */}
-      <BlogHeroSection />
+      {/* <BlogHeroSection /> */}
 
       {/* Header */}
-      <div className="pt-8 pb-8">
+      <div className="pt-24 pb-8">
         <div className="container mx-auto px-6">
           <button
             onClick={() => router.push('/blog')}
