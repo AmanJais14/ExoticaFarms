@@ -189,7 +189,7 @@ export const blogPosts = [
     readTime: '8 min read',
     category: 'Exotic Farming',
     tags: ['Dates', 'Avocados', 'Exotic Farming', 'Anantapur', 'Investment Opportunity', 'Agricultural Innovation', 'High-Value Crops'],
-    image: '/assets/blog/avocado_dates.png',
+    image: '/assets/blog/avocado_dates.jpeg',
     featured: true,
     seo: {
       keywords: ['dates farming India', 'avocado cultivation Anantapur', 'exotic farming investment', 'date palm plantation', 'avocado orchard India', 'agricultural investment opportunities', 'Anantapur farming'],
