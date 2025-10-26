@@ -1,30 +1,140 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/app/_not-found/page-92e99d6fe13c1bb6.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/layout": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/css/3c9d7120a28218c3.css",
+      "static/chunks/app/layout-48cd8f93b12ca9a6.js"
+    ],
+    "/api/analytics/web-vitals/route": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/app/api/analytics/web-vitals/route-bd4b0f6ed3d90ffa.js"
+    ],
+    "/api/send-email/route": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/app/api/send-email/route-bd4b0f6ed3d90ffa.js"
+    ],
+    "/robots.txt/route": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/app/robots.txt/route-bd4b0f6ed3d90ffa.js"
+    ],
+    "/sitemap.xml/route": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/app/sitemap.xml/route-bd4b0f6ed3d90ffa.js"
+    ],
+    "/exoticafarms/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/7508b87c-04030669b49472ce.js",
+      "static/chunks/910-b0dd96bd6f30eacf.js",
+      "static/chunks/986-c1811ca6286704be.js",
+      "static/chunks/990-cf35204d3f650af0.js",
+      "static/chunks/app/exoticafarms/page-53ab76bf760aef6c.js"
+    ],
+    "/test-email/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/app/test-email/page-0726e1da558360a9.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/95-f8676a3bee788818.js",
+      "static/chunks/app/about/page-d493b9a020776634.js"
     ],
     "/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/page.js"
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/910-b0dd96bd6f30eacf.js",
+      "static/chunks/55-9ca078fb7b3d0dae.js",
+      "static/chunks/719-062636b0f0b6516a.js",
+      "static/chunks/app/blog/page-f38a4fecc2a1b085.js"
+    ],
+    "/exoticafarms/blog/[id]/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/910-b0dd96bd6f30eacf.js",
+      "static/chunks/55-9ca078fb7b3d0dae.js",
+      "static/chunks/173-b9fff3a91a45974e.js",
+      "static/chunks/app/exoticafarms/blog/[id]/page-58ff1132bdecd0d6.js"
     ],
     "/blog/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/blog/[id]/page.js"
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/910-b0dd96bd6f30eacf.js",
+      "static/chunks/55-9ca078fb7b3d0dae.js",
+      "static/chunks/173-b9fff3a91a45974e.js",
+      "static/chunks/app/blog/[id]/page-861ae74374b4279b.js"
     ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+    "/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/7508b87c-04030669b49472ce.js",
+      "static/chunks/910-b0dd96bd6f30eacf.js",
+      "static/chunks/986-c1811ca6286704be.js",
+      "static/chunks/990-cf35204d3f650af0.js",
+      "static/chunks/app/page-eb8a1f2c52345bbf.js"
+    ],
+    "/thank-you/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/95-f8676a3bee788818.js",
+      "static/chunks/app/thank-you/page-0e8d5dd78f69d561.js"
+    ],
+    "/exoticafarms/blog/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/910-b0dd96bd6f30eacf.js",
+      "static/chunks/55-9ca078fb7b3d0dae.js",
+      "static/chunks/719-062636b0f0b6516a.js",
+      "static/chunks/app/exoticafarms/blog/page-f3bd0e2ec7eefbeb.js"
+    ],
+    "/vision/page": [
+      "static/chunks/webpack-3b34d1dd38bc3c84.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-7a34cadcb7695cec.js",
+      "static/chunks/main-app-c9aaa9982f9280a6.js",
+      "static/chunks/95-f8676a3bee788818.js",
+      "static/chunks/app/vision/page-a917a89fd0701fe9.js"
     ]
   }
 }

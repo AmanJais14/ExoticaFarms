@@ -27,6 +27,11 @@ export async function generateMetadata({ params }) {
   // Clean excerpt for meta description (remove HTML tags)
   const cleanExcerpt = post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160)
 
+  // Convert relative image URL to absolute URL for social media sharing
+  const absoluteImageUrl = post.image.startsWith('http')
+    ? post.image
+    : `https://exorafarms.com${post.image}`
+
   return {
     title: `${post.title} | Exora Farms Blog`,
     description: cleanExcerpt,
@@ -59,7 +64,7 @@ export async function generateMetadata({ params }) {
       tags: post.tags,
       images: [
         {
-          url: post.image,
+          url: absoluteImageUrl,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -72,7 +77,7 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: post.title,
       description: cleanExcerpt,
-      images: [post.image],
+      images: [absoluteImageUrl],
       creator: '@exorafarms',
       site: '@exorafarms',
     },
