@@ -1,17 +1,5 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/analytics/web-vitals/route": "app/api/analytics/web-vitals/route.js",
-  "/api/send-email/route": "app/api/send-email/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/exoticafarms/page": "app/exoticafarms/page.js",
-  "/test-email/page": "app/test-email/page.js",
-  "/about/page": "app/about/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/exoticafarms/blog/[id]/page": "app/exoticafarms/blog/[id]/page.js",
-  "/blog/[id]/page": "app/blog/[id]/page.js",
   "/page": "app/page.js",
-  "/thank-you/page": "app/thank-you/page.js",
-  "/exoticafarms/blog/page": "app/exoticafarms/blog/page.js",
-  "/vision/page": "app/vision/page.js"
+  "/blog/page": "app/blog/page.js"
 }
