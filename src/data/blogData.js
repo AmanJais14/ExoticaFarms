@@ -112,7 +112,7 @@ export const blogPosts = [
 
       <h3>Profit Potential of Dates</h3>
       <ul>
-        <li>Mature plantations generate ₹6–12 lakh per acre annually.</li>
+        <li>Mature plantations generate ₹5-7 lakh per acre annually.</li>
         <li>Farmers in Andhra and Gujarat have achieved ₹40,000 per tree in peak years.</li>
         <li>Strong demand during festive seasons ensures stable markets.</li>
         <li>Long-term productivity creates consistent cash flow.</li>
@@ -121,7 +121,7 @@ export const blogPosts = [
       <h3>Profit Potential of Avocados</h3>
       <ul>
         <li>Avocados fetch ₹300–₹500 per kg in Indian metros.</li>
-        <li>A well-managed orchard can earn ₹6–12 lakh per acre annually.</li>
+        <li>A well-managed orchard can earn ₹5-7 lakh per acre annually.</li>
         <li>Strong export potential to Middle East and Asia.</li>
         <li>Processing opportunities (avocado oil, pulp) add further revenue streams.</li>
       </ul>
