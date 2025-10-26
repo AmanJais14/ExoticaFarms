@@ -27,6 +27,9 @@ export async function generateMetadata({ params }) {
   // Clean excerpt for meta description (remove HTML tags)
   const cleanExcerpt = post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160)
 
+  // Create a shorter description for Open Graph (to avoid duplication on WhatsApp)
+  const ogDescription = cleanExcerpt.substring(0, 100)
+
   // Convert relative image URL to absolute URL for social media sharing
   const absoluteImageUrl = post.image.startsWith('http')
     ? post.image
@@ -54,7 +57,7 @@ export async function generateMetadata({ params }) {
     },
     openGraph: {
       title: post.title,
-      description: cleanExcerpt,
+      description: ogDescription,
       type: 'article',
       publishedTime: post.date,
       modifiedTime: post.date,
@@ -75,7 +78,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: 'summary_large_image',
       title: post.title,
-      description: cleanExcerpt,
+      description: ogDescription,
       images: [absoluteImageUrl],
       creator: '@exorafarms',
       site: '@exorafarms',
