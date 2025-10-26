@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen, ArrowRight } from 'lucide-react';
 import { getPostById, getAllPosts } from '../../data/blogData';
 import BlogNavbar from './BlogNavbarNextjs';
@@ -273,10 +274,17 @@ const BlogPost = ({ params }) => {
 
               {/* Featured Image */}
               <div className="relative h-64 md:h-96 rounded-3xl overflow-hidden mb-8">
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1000px"
+                  onError={(e) => {
+                    console.error(`Failed to load image: ${post.image}`);
+                    e.target.style.display = 'none';
+                  }}
                 />
               </div>
             </header>
@@ -338,10 +346,16 @@ const BlogPost = ({ params }) => {
                       className="group bg-white rounded-2xl shadow-lg border border-green-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
                     >
                       <div className="relative h-32 overflow-hidden">
-                        <img
+                        <Image
                           src={relatedPost.image}
                           alt={relatedPost.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          onError={(e) => {
+                            console.error(`Failed to load related post image: ${relatedPost.image}`);
+                            e.target.style.display = 'none';
+                          }}
                         />
                         <div className="absolute top-2 left-2">
                           <span className="px-2 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">

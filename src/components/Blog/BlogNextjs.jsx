@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Search, Calendar, Clock, User, Tag, ArrowRight, Filter } from 'lucide-react';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { getAllPosts, searchPosts, getPostsByCategory, getAllCategories } from '../../data/blogData';
 import BlogNavbar from './BlogNavbarNextjs';
@@ -184,12 +185,17 @@ const Blog = () => {
                   className="group bg-white rounded-3xl shadow-lg border border-green-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   {/* Featured Image */}
-                  <div onClick={() => router.push(`/blog/${post.id}`)} className="relative h-48 overflow-hidden">
-                    <img
-                    
+                  <div onClick={() => router.push(`/blog/${post.id}`)} className="relative h-48 overflow-hidden cursor-pointer">
+                    <Image
                       src={post.image}
                       alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      onError={(e) => {
+                        console.error(`Failed to load blog post image: ${post.image}`);
+                        e.target.style.display = 'none';
+                      }}
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-green-500 text-white text-sm font-semibold rounded-full">
