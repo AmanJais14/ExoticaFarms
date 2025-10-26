@@ -34,7 +34,6 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${post.title} | Exora Farms Blog`,
-    description: cleanExcerpt,
     keywords: [
       ...post.tags,
       'agricultural investment',
