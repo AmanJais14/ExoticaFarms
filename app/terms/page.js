@@ -28,7 +28,7 @@ export default function TermsPage() {
             Back to Home
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms & Conditions</h1>
-          <p className="text-lg text-green-100">Last updated: January 2025</p>
+          <p className="text-lg text-green-100">Last updated: November 2025</p>
         </div>
       </section>
 
