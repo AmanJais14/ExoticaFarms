@@ -807,21 +807,18 @@ We specialize in discovering and designing investible businesses across high-gro
               <Link href="/blog" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
                 Blog
               </Link>
-              {/* <Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Contact
-              </Link> */}
-              {/* <Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Privacy
+              <Link href="/contact" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+                Contact Us
               </Link>
-              <Link href="#" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                Terms
-              </Link> */}
+              <Link href="/terms" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+                Terms & Conditions
+              </Link>
             </div>
 
             {/* Copyright */}
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
-                © 2025 Exora Club. All rights reserved.
+                © 2025 Perfect Neighbourhood LLP | All Rights Reserved
               </p>
             </div>
           </div>

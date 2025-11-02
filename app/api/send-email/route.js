@@ -3,13 +3,22 @@ import { NextResponse } from 'next/server';
 export async function POST(request) {
   try {
     const body = await request.json();
-    
+
+    // Support both contact form and investment form field names
+    const fullName = body.fullName || body.name;
+    const email = body.email;
+    const phone = body.phone;
+    const investmentInterest = body.investmentInterest;
+    const slotDateTime = body.slotDateTime;
+    const notes = body.notes || body.message;
+    const submissionId = body.submissionId;
+    const subject = body.subject;
+    const type = body.type || 'investment'; // 'contact' or 'investment'
+
     // Validate required fields
-    const { fullName, email, phone, investmentInterest, slotDateTime, notes, submissionId } = body;
-    
-    if (!fullName || !phone || !investmentInterest) {
+    if (!fullName || !phone) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Missing required fields: name and phone are required' },
         { status: 400 }
       );
     }
@@ -22,9 +31,9 @@ export async function POST(request) {
     const TO_EMAIL = process.env.TO_EMAIL || 'info@exorafarms.co.in'; // Recipient email
 
     // Format the email content
-    const emailSubject = `New Contact Form Submission - ${fullName}`;
+    const emailSubject = subject || `New ${type === 'contact' ? 'Contact' : 'Investment'} Form Submission - ${fullName}`;
     const emailBody = `
-New Contact Form Submission Received
+${type === 'contact' ? 'New Contact Form Submission' : 'New Investment Inquiry'} Received
 
 Submission Details:
 ==================
@@ -36,17 +45,19 @@ Contact Information:
 Full Name: ${fullName}
 Email: ${email || 'Not provided'}
 Phone: ${phone}
-Investment Interest: ${investmentInterest}
+${investmentInterest ? `Investment Interest: ${investmentInterest}` : ''}
 
-Appointment Details:
+${subject ? `Subject: ${subject}` : ''}
+
+${slotDateTime ? `Appointment Details:
 ===================
-Preferred Slot: ${slotDateTime ? new Date(slotDateTime).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) : 'Not specified'}
+Preferred Slot: ${new Date(slotDateTime).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}` : ''}
 
 Additional Notes:
 ================
 ${notes || 'No additional notes provided'}
 
-Source: Website Contact Form
+Source: Website ${type === 'contact' ? 'Contact' : 'Investment'} Form
 User Agent: ${request.headers.get('user-agent')}
 IP Address: ${request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'Unknown'}
 
@@ -100,9 +111,6 @@ Please respond to the customer within 24 hours.
           pass: SMTP_PASS,
         },
       });
-
-      // Convert plain text to HTML
-      const htmlBody = emailBody.replace(/\n/g, '<br>');
 
       await transporter.sendMail({
         from: `"Exora Farms Website" <${SMTP_USER}>`,
@@ -192,7 +200,7 @@ Please respond to the customer within 24 hours.
 }
 
 // Handle preflight requests for CORS
-export async function OPTIONS(request) {
+export async function OPTIONS() {
   return new NextResponse(null, {
     status: 200,
     headers: {

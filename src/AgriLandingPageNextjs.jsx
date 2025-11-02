@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
   Users,
@@ -1710,8 +1711,22 @@ const AgriLandingPage = () => {
                 </div>
 
                 <div className="border-t border-neutral-700 pt-6">
+                  <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4 text-sm">
+                    <Link href="/" className="text-neutral-400 hover:text-white transition-colors">
+                      Home
+                    </Link>
+                    <Link href="/blog" className="text-neutral-400 hover:text-white transition-colors">
+                      Blog
+                    </Link>
+                    <Link href="/contact" className="text-neutral-400 hover:text-white transition-colors">
+                      Contact Us
+                    </Link>
+                    <Link href="/terms" className="text-neutral-400 hover:text-white transition-colors">
+                      Terms & Conditions
+                    </Link>
+                  </div>
                   <p className="text-neutral-500 text-sm">
-                    © 2025 All rights reserved.
+                    © 2025 Perfect Neighbourhood LLP | All Rights Reserved
                   </p>
                   <p className="text-neutral-600 text-xs mt-1">
                     Invest in India's most rewarding agri real estate
