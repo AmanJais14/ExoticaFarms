@@ -758,7 +758,7 @@ const AgriLandingPage = () => {
       </section> */}
 
         {/* How It Works */}
-        <HowItWorks />
+        {/* <HowItWorks /> */}
 
         {/* Content Wrapper with Extra Horizontal Padding */}
         <div className="">

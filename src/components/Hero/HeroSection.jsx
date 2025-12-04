@@ -92,7 +92,7 @@ const HeroSection = ({
               {/* </p> */}
               <p className="text-xs sm:text-sm md:text-base max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
                 <span className="text-white/90">Starting at </span>
-                <span className="text-green-300 font-bold">₹29.9L per acre</span>
+                <span className="text-green-300 font-bold">₹31.5L per acre</span>
                 {/* <span className="text-white/90"> or </span> */}
                 {/* <span className="text-emerald-300 font-bold">₹55L (2 acres)</span> */}
               </p>
@@ -111,7 +111,7 @@ const HeroSection = ({
               <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-xs rounded-md md:rounded-xl p-2 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 md:h-20 relative overflow-hidden">
                 {/* Tax Free Ticker */}
                 <div className="absolute top-0 right-0 text-black bg-white/70 text-[0.5rem] font-bold px-1.5 md:px-2 py-0.5 md:py-1 rounded-bl-lg animate-pulse overflow-hidden">
-                  TAX FREE
+                  Revenue Share
                 </div>
 
                 <div className="flex items-center gap-1.5 md:gap-3 h-full">
@@ -119,8 +119,8 @@ const HeroSection = ({
                     <TrendingUp className="w-3 md:w-5 h-3 md:h-5 text-green-700" />
                   </div> */}
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs md:text-base font-bold text-white leading-tight">12-18%*</div>
-                    <div className="text-xs text-white/80 leading-tight">Dividends (Y3+)</div>
+                    <div className="text-xs md:text-base font-bold text-white leading-tight">70:30</div>
+                    <div className="text-xs text-white/80 leading-tight">70% Land Owners | 30% Developers</div>
                   </div>
                 </div>
               </div>

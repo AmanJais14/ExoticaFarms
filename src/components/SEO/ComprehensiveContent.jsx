@@ -107,7 +107,7 @@ const ComprehensiveContent = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">What is the minimum investment amount?</h3>
               <p className="text-gray-700 mb-4">
-                The minimum investment starts at ₹29.9 lakhs per acre, which includes land acquisition, 
+                The minimum investment starts at ₹31.5 lakhs per acre, which includes land acquisition, 
                 infrastructure development, and initial crop establishment costs.
               </p>
 
