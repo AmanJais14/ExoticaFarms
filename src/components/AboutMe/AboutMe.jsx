@@ -34,10 +34,21 @@ const AboutMe = () => {
     },
     {
       id: 3,
-      type: "mentorship",
-      title: "Strategic Mentorship",
-      description: "...Mentored by business leaders from Flipkart, Samsung, and EXL, bringing an experience of strategy, execution & scale"
-    }
+      name: "Mr. Arun Chaturvedi",
+      expertise: "CBO at PNH, IIM Mumbai",
+      image: `${Sunil}`,
+      companyLogo: "/assets/logos/pnh.jpg",
+      education: "IIM Mumbai, B.Tech Agriculture",
+      experience: "12+ years in Business Development",
+      specialization: "Precision farming and crop optimization",
+      achievements: ["Led 50+ successful farm projects", "Expert in sustainable agriculture", "Technology integration specialist"]
+    },
+    // {
+    //   id: 3,
+    //   type: "mentorship",
+    //   title: "Strategic Mentorship",
+    //   description: "...Mentored by business leaders from Flipkart, Samsung, and EXL, bringing an experience of strategy, execution & scale"
+    // }
   ];
 
   return (
@@ -58,7 +69,7 @@ const AboutMe = () => {
               Who <span className="gradient-text">are We</span>
             </h2>
             <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto leading-relaxed">
-              Our leadership blends decades of expertise in agriculture & real estate to deliver exceptional ROI.
+              Mentored by business leaders from Flipkart, Samsung, and EXL, bringing an experience of strategy, execution & scale  
             </p>
           </div>
 
