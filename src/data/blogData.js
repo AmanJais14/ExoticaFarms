@@ -308,7 +308,7 @@ export const blogPosts = [
   //     <h2>Section 1: The Four Investment Models</h2>
 
   //     <h3>1. Exora Farms – The Dividend Compounder</h3>
-  //     <p>Exora Farms enables investors to buy farmland (~₹31.5 lakh/acre) developed into exotic fruit orchards.</p>
+  //     <p>Exora Farms enables investors to buy farmland (~₹33 lakh/acre) developed into exotic fruit orchards.</p>
   //     <ul>
   //       <li><strong>Dividends:</strong> Begin Year 3 at 8% (~₹2.4 lakh/acre), then stabilise at 12–18% base from Year 4, escalating 4% annually with inflation.</li>
   //       <li><strong>Reinvestment:</strong> Dividends reinvested at 12% CAGR multiply wealth significantly.</li>
@@ -370,13 +370,13 @@ export const blogPosts = [
   //         <tbody>
   //           <tr>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 12% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹31.5 L</td>
+  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹181.3 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">6.1×</td>
   //           </tr>
   //           <tr>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 18% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹31.5 L</td>
+  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹234.8 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">7.9×</td>
   //           </tr>
@@ -423,13 +423,13 @@ export const blogPosts = [
   //         <tbody>
   //           <tr>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 12% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹31.5 L</td>
+  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹1,182 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">39.6×</td>
   //           </tr>
   //           <tr>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 18% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹31.5 L</td>
+  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹1,612 L</td>
   //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">54×</td>
   //           </tr>

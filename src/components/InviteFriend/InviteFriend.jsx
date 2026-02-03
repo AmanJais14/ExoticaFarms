@@ -7,7 +7,7 @@ const InviteFriend = () => {
   const [friendEmails, setFriendEmails] = useState(['']);
 
   const referralLink = "https://agri-investment.com/ref/ABC123";
-  const shareMessage = "🌱 Discover Exotic Farming Investment! Earn 16%+ dividends (tax-free) + 12% capital appreciation. Starting at ₹31.5L per acre. Check it out:";
+  const shareMessage = "🌱 Discover Exotic Farming Investment! Earn 16%+ dividends (tax-free) + 12% capital appreciation. Starting at ₹33L per acre. Check it out:";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(`${shareMessage} ${referralLink}`);

@@ -11,7 +11,7 @@ export const metadata = {
     default: 'Exora Farms - Premium Agricultural Real Estate Investment | 12-18% Annual Returns',
     template: '%s | Exora Farms'
   },
-  description: 'Perfect Neighbourhood LLP presents Exora Farms - Premium agricultural real estate investment with 12-18% annual dividends. Expert real estate services, zero brokerage, and sustainable farming practices. Starting at ₹31.5L per acre.',
+  description: 'Perfect Neighbourhood LLP presents Exora Farms - Premium agricultural real estate investment with 12-18% annual dividends. Expert real estate services, zero brokerage, and sustainable farming practices. Starting at ₹33L per acre.',
   keywords: [
     'Perfect Neighbourhood LLP',
     'agricultural real estate investment',
@@ -209,7 +209,7 @@ export default function RootLayout({ children }) {
       "name": "Exora Farms"
     },
     "category": "Real Estate Investment",
-    "feesAndCommissionsSpecification": "Starting at ₹31.5L per acre",
+    "feesAndCommissionsSpecification": "Starting at ₹33L per acre",
     "annualPercentageRate": "12-18%",
     "interestRate": "12-18% annual dividends"
   }

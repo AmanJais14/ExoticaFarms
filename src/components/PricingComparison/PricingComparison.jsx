@@ -5,7 +5,7 @@ const PricingComparison = () => {
   const comparisonData = [
     {
       feature: "Investment Amount",
-      us: "₹31.5L per acre",
+      us: "₹33L per acre",
       competitor1: "₹39.9L per acre",
       competitor2: "₹66L per acre",
       competitor3: "₹80L+ per acre",
@@ -68,7 +68,7 @@ const PricingComparison = () => {
                 </div>
                 <div className="inline-flex items-center gap-2 px-4 py-2  rounded-xl text-gray-700 mb-2">
                   <CheckCircle className="w-4 h-4" />
-                  <span className="font-bold text-sm">₹31.5L per acre</span>
+                  <span className="font-bold text-sm">₹33L per acre</span>
                 </div>
                 {/* <div className="inline-block bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                   SAVES ₹10L-₹90L+

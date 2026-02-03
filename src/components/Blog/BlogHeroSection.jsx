@@ -46,7 +46,7 @@ const BlogHeroSection = () => {
               <div className="mt-4 sm:mt-6">
               <p className="text-xs sm:text-sm md:text-sm lg:text-base font-semibold text-white/90 mb-1 sm:mb-2">
                 <span className="text-white/90">Starting at </span>
-                <span className="text-green-300 font-bold">₹31.5L per acre</span>
+                <span className="text-green-300 font-bold">₹33L per acre</span>
               </p>
               <p className="text-xs sm:text-sm md:text-sm lg:text-base max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
                 <span className="text-white/80">Earn </span>
