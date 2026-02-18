@@ -234,7 +234,7 @@ const AboutUsPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+919379627377"
+                href="tel:+918065293622"
                 className="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-300 text-sm"
               >
                 Contact Us Today
