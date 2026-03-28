@@ -285,301 +285,76 @@ export const blogPosts = [
       canonicalUrl: '/blog/medjool-dates-king-india-export-story'
     }
   },
-  // {
-  //   id: 'farmland-investment-india-metros-exora-farms-vs-timber-nifty',
-  //   title: 'Farmland Investment in India\'s Top Metros: Why Exora Farms Outshines Timber Plantations, Lifestyle Farms, and the Nifty 50',
-  //   metaTitle: 'Farmland Investment India: Exora Farms vs Timber vs Nifty 50 | 30-Year Wealth Comparison',
-  //   metaDescription: 'Comprehensive analysis of farmland investment options in India\'s metros. Compare Exora Farms exotic orchards vs timber plantations vs lifestyle farms vs Nifty 50. See 15-year and 30-year wealth projections with up to 54x returns.',
-  //   excerpt: 'A detailed comparison of four investment models for India\'s metro investors: Exora Farms exotic orchards, timber plantations, lifestyle farms, and Nifty 50. Discover why Exora Farms delivers superior 30-year wealth creation with up to 54x returns.',
-  //   content: `
-  //     <h2>Introduction</h2>
-  //     <p>For decades, India's wealthy and upwardly mobile professionals across Bengaluru, Mumbai, Delhi NCR, Hyderabad, Chennai, and Pune have looked at land as the safest form of wealth creation. Traditionally, farmland was purchased for legacy or self-cultivation. Today, however, structured farmland models are emerging as investment products, offering both title-secure land ownership and predictable annual cash flows.</p>
+  {
+    id: 'passive-income-farmland-india',
+    title: 'How to Earn Passive Income from Farmland in India',
+    metaTitle: 'Passive Income from Farmland in India | Exora Farms Guide',
+    metaDescription: 'Learn how to earn passive income from farmland in India through managed farmland investment. Discover tax-free agriculture income, exotic crop returns, and hassle-free ownership with Exora Farms.',
+    excerpt: 'Farmland is one of the most reliable ways to generate passive income in India. With managed farmland models and exotic crop cultivation, investors can earn tax-free recurring returns without active involvement.',
+    content: `
+      <h2>Introduction</h2>
+      <p>For decades, investors have relied on fixed deposits, rental properties, and dividend stocks for passive income. But there is an asset class that has quietly outperformed many of these options — farmland. With the rise of managed farmland models like Exora Farms, earning passive income from agricultural land in India has become accessible, hassle-free, and highly rewarding.</p>
+      <p>Whether you are an IT professional in Bangalore, a business owner in Hyderabad, or an NRI looking for secure investments back home, farmland offers a unique combination of recurring income, capital appreciation, and tax benefits that few other assets can match.</p>
 
-  //     <p>In this evolving landscape, investors face four clear options:</p>
-  //     <ul>
-  //       <li><strong>Exora Farms (Exotic Orchards):</strong> Professionally managed orchards of avocados and dates, offering annual dividends + land appreciation.</li>
-  //       <li><strong>Timber Plantations (Sandalwood-led):</strong> Long-gestation projects that pay a jackpot after 12–15 years.</li>
-  //       <li><strong>Lifestyle Farms (Hosachiguru & Others):</strong> Weekend eco-retreats with modest returns, driven by sustainability and lifestyle.</li>
-  //       <li><strong>Nifty 50 Index:</strong> India's equity market benchmark, assumed to grow at 12% CAGR over the long term.</li>
-  //     </ul>
+      <h2>Why Farmland is a Strong Passive Income Source</h2>
+      <p>Unlike stocks or mutual funds that are subject to market volatility, farmland generates income from a tangible, productive asset. The land appreciates over time while simultaneously producing crops that generate recurring revenue. This dual-income nature — land value growth plus crop yields — makes farmland one of the most resilient passive income sources available.</p>
+      <p>India's growing demand for premium and exotic produce, combined with government support for agriculture, creates a favourable environment for farmland investors seeking stable returns.</p>
 
-  //     <p>This whitepaper compares these four models across 15-year and 30-year horizons, with realistic assumptions. We also note that Exora's additional product lines (exports, FMCG extensions like jams and juices, biodiversity farm-stays, and fruit tasting experiences) are not yet factored into these models—meaning actual returns could be significantly higher.</p>
+      <h2>The Managed Farmland Model</h2>
+      <p>The biggest barrier to earning from farmland has traditionally been the operational burden — managing labourers, irrigation, pest control, harvesting, and sales. Managed farmland companies like Exora Farms handles these challenges effectively.</p>
+      <p>With Exora Farms, investors own the land while a team of agricultural experts handle everything from soil preparation and planting to harvesting and selling the produce. This means you earn passive income without much of an effort. The managed model is designed specifically for urban professionals who want agricultural returns without the time commitment of active farming.</p>
 
-  //     <h2>Section 1: The Four Investment Models</h2>
+      <h2>Exotic Crops: Higher Returns, Stronger Demand</h2>
+      <p>Exora Farms focuses on high-value exotic crops like Medjool dates, Barhi dates, and Red Sandalwood. These crops command premium prices in Indian markets and have strong export potential. Unlike traditional crops that face price fluctuations and thin margins, exotic fruits offer significantly higher per-acre returns.</p>
+      <ul>
+      <li>Medjool dates are a luxury product with consistent domestic and international demand.</li>
+      <li>Barhi dates are gaining popularity as a fresh superfruit among health-conscious consumers.</li>
+      <li>Red Sandalwood is a valuable timber species with high market demand.</li>
+      <li>Avocados fetch ₹300–₹500 per kg in Indian metros with demand growing rapidly.</li>
+      </ul>
+      <p>Once established, these orchards produce fruit for 30–50 years, creating a long-lasting passive income stream that grows as trees mature and yields increase.</p>
 
-  //     <h3>1. Exora Farms – The Dividend Compounder</h3>
-  //     <p>Exora Farms enables investors to buy farmland (~₹33 lakh/acre) developed into exotic fruit orchards.</p>
-  //     <ul>
-  //       <li><strong>Dividends:</strong> Begin Year 3 at 8% (~₹2.4 lakh/acre), then stabilise at 12–18% base from Year 4, escalating 4% annually with inflation.</li>
-  //       <li><strong>Reinvestment:</strong> Dividends reinvested at 12% CAGR multiply wealth significantly.</li>
-  //       <li><strong>Land Growth:</strong> 8% CAGR independent of dividends.</li>
-  //       <li><strong>Crop Life:</strong> Orchards remain productive for ~30 years.</li>
-  //       <li><strong>Extra Upside (Not Included):</strong> Exports, jams/juices, farm-stays, fruit experiences.</li>
-  //     </ul>
+      <h2>Tax-Free Agricultural Income</h2>
+      <p>One of the most compelling advantages of farmland income in India is that agricultural income is completely tax-free under the Income Tax Act. This means every rupee you earn from your farmland goes directly into your pocket — no TDS, no capital gains tax on crop income, and no annual tax filings for agricultural earnings.</p>
+      <p>Compare this to rental income (taxed at your slab rate), fixed deposit interest (fully taxable), or stock dividends (taxed above ₹10 lakh), and the advantage becomes clear. Farmland is one of the most tax-efficient passive income sources in India.</p>
 
-  //     <h3>2. Timber Plantations – The Jackpot Gamble</h3>
-  //     <p>Timber, especially sandalwood, is marketed as "green gold."</p>
-  //     <ul>
-  //       <li><strong>Entry:</strong> ~₹36 lakh/acre.</li>
-  //       <li><strong>Payout:</strong> Investor receives 70% of harvest proceeds (worth ~₹2.8 crore after 15 years).</li>
-  //       <li><strong>Interim Income:</strong> ~₹1.5 lakh/year from intercrops.</li>
-  //       <li><strong>Risks:</strong> Government policy, harvest execution, and market demand.</li>
-  //     </ul>
-  //     <p>Timber appeals to investors seeking a one-time jackpot, but lacks annual dividends.</p>
+      <h2>How the Numbers Work</h2>
+      <p>With Exora Farms, investors can expect returns to begin from the third year onward as exotic fruit trees start yielding. As orchards mature, annual returns grow steadily. A well-managed exotic fruit orchard can generate ₹5–7 lakh per acre annually at full maturity.</p>
+      <p>Additionally, farmland in regions like Anantapur appreciates in value over time, adding capital gains on top of your recurring crop income. This combination of yield income and land appreciation creates a compounding effect that accelerates wealth creation.</p>
 
-  //     <h3>3. Lifestyle Farms – The Experience Asset</h3>
-  //     <p>Hosachiguru and similar projects position farmland as eco-living retreats rather than ROI assets.</p>
-  //     <ul>
-  //       <li><strong>Returns:</strong> Minimal, primarily 8% land appreciation.</li>
-  //       <li><strong>Value Proposition:</strong> Sustainability, weekend retreats, organic produce.</li>
-  //       <li><strong>Audience:</strong> Families and professionals valuing lifestyle over financial growth.</li>
-  //     </ul>
+      <h2>Steps to Start Earning Passive Income from Farmland</h2>
+      <ol>
+        <li><strong>Choose a Trusted Managed Farmland Partner:</strong> Look for companies with proven agricultural expertise, transparent operations, and clear legal documentation. Exora Farms offers end-to-end managed farmland with full ownership rights.</li>
+        <li><strong>Select the Right Crop and Location:</strong> High-value exotic crops in suitable agro-climatic zones like Anantapur ensure maximum returns and lower risk.</li>
+        <li><strong>Understand the Investment Timeline:</strong> Exotic fruit orchards typically begin yielding in 3–4 years. Plan your investment with a long-term horizon for the best results.</li>
+        <li><strong>Stay Informed, Stay Passive:</strong> With Exora Farms, you receive regular updates on your farm's progress while the team handles all operations. Your role is simply to own and earn.</li>
+      </ol>
 
-  //     <h3>4. Nifty 50 – The Equity Benchmark</h3>
-  //     <p>The Nifty 50 index is India's stock market benchmark.</p>
-  //     <ul>
-  //       <li><strong>CAGR:</strong> Historically ~12% long-term returns.</li>
-  //       <li><strong>Liquidity:</strong> Easy entry/exit compared to farmland.</li>
-  //       <li><strong>Volatility:</strong> Short-term ups and downs can be sharp.</li>
-  //       <li><strong>Tangible Ownership:</strong> None—investors own financial assets, not real land.</li>
-  //     </ul>
-  //     <p>Including Nifty provides a reference benchmark for farmland investors deciding between traditional financial markets and land-backed assets.</p>
+      <h2>Who Should Consider Farmland for Passive Income?</h2>
+      <ul>
+        <li>IT professionals and corporate employees seeking diversification beyond stocks and mutual funds.</li>
+        <li>Business owners looking for tax-efficient income streams.</li>
+        <li>NRIs wanting a secure, appreciating asset in India with recurring returns.</li>
+        <li>Retirees seeking stable, inflation-protected income without market risk.</li>
+        <li>Young investors building long-term wealth through tangible assets.</li>
+      </ul>
 
-  //     <h2>Section 2: Investment Assumptions</h2>
-  //     <ul>
-  //       <li><strong>Exora Farms:</strong> Year 3 dividends = 8% → 12–18% from Year 4, with 4% annual growth.</li>
-  //       <li><strong>Dividend Reinvestment:</strong> At 12% CAGR.</li>
-  //       <li><strong>Land Growth:</strong> 8% CAGR.</li>
-  //       <li><strong>Timber:</strong> Investor gets 70% of harvest value.</li>
-  //       <li><strong>Lifestyle Farms:</strong> Land appreciation ~8% CAGR + minimal crop returns.</li>
-  //       <li><strong>Nifty 50:</strong> 12% CAGR.</li>
-  //     </ul>
-  //     <p><em>All Exora upside from exports, jams/juices, eco-stays, and fruit experiences is excluded, making projections conservative.</em></p>
-
-  //     <h2>Section 3: 15-Year Wealth Outcomes</h2>
-  //     <div style="overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  //       <table style="width: 100%; min-width: 600px; border-collapse: collapse;">
-  //         <thead>
-  //           <tr style="background-color: #f8f9fa;">
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Model</th>
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Entry</th>
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Wealth @15Y</th>
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Multiple</th>
-  //           </tr>
-  //         </thead>
-  //         <tbody>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 12% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹181.3 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">6.1×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 18% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹234.8 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">7.9×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Timber (70% share)</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹36 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~₹268.5 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">7.5×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Lifestyle Farms</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹30–40 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~₹120–150 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~4–5×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Nifty 50 @12% CAGR</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹30 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~₹164 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">5.5×</td>
-  //           </tr>
-  //         </tbody>
-  //       </table>
-  //     </div>
-
-  //     <h3>Key Takeaways at 15 Years</h3>
-  //     <ul>
-  //       <li>Timber looks strong (7.5×), but Exora 18% case surpasses it (7.9×).</li>
-  //       <li>Nifty grows to 5.5×, stable but lower than farmland.</li>
-  //       <li>Lifestyle farms trail badly.</li>
-  //     </ul>
-
-  //     <h2>Section 4: 30-Year Wealth Outcomes</h2>
-  //     <div style="overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  //       <table style="width: 100%; min-width: 600px; border-collapse: collapse;">
-  //         <thead>
-  //           <tr style="background-color: #f8f9fa;">
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Model</th>
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Entry</th>
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Wealth @30Y</th>
-  //             <th style="border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; white-space: nowrap;">Multiple</th>
-  //           </tr>
-  //         </thead>
-  //         <tbody>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 12% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹1,182 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">39.6×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Exora – 18% base, reinvest @12%</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹33 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹1,612 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-weight: bold; color: #22c55e; font-size: 13px;">54×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Timber (70% share, 2 cycles)</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹36 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~₹537 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">15×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Lifestyle Farms</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹30–40 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~₹250–300 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~7–10×</td>
-  //           </tr>
-  //           <tr>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">Nifty 50 @12% CAGR</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">₹30 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">~₹899 L</td>
-  //             <td style="border: 1px solid #ddd; padding: 8px 12px; font-size: 13px;">30×</td>
-  //           </tr>
-  //         </tbody>
-  //       </table>
-  //     </div>
-
-  //     <h3>Key Takeaways at 30 Years</h3>
-  //     <ul>
-  //       <li><strong>Exora dominates:</strong> Up to 54× wealth.</li>
-  //       <li><strong>Timber stagnates</strong> at 15× due to replanting cycles.</li>
-  //       <li><strong>Lifestyle remains niche.</strong></li>
-  //       <li><strong>Nifty compounds steadily</strong> to 30×, but Exora 18% far outpaces it.</li>
-  //     </ul>
-
-  //     <h2>Section 5: Risk & Stability Analysis</h2>
-  //     <ul>
-  //       <li><strong>Exora:</strong> Risks in crop yields and fruit pricing, mitigated by professional management and strong buyer linkages (Zepto, Blinkit, Swiggy, Country Delight).</li>
-  //       <li><strong>Timber:</strong> Heavily dependent on policy, harvest prices, and execution.</li>
-  //       <li><strong>Lifestyle:</strong> Weak resale, no structured dividends.</li>
-  //       <li><strong>Nifty:</strong> Subject to market volatility and cycles.</li>
-  //     </ul>
-
-  //     <h2>Section 6: Strategic Positioning</h2>
-  //     <ul>
-  //       <li><strong>Exora Farms = The Compounder</strong> (steady cash flows + compounding).</li>
-  //       <li><strong>Timber = The Jackpot</strong> (high risk, one-time payout).</li>
-  //       <li><strong>Lifestyle = The Experience</strong> (emotional returns, not financial).</li>
-  //       <li><strong>Nifty = The Benchmark</strong> (predictable equity growth but intangible).</li>
-  //     </ul>
-
-  //     <h2>Section 7: Investor Guidance</h2>
-
-  //     <h3>10–15 Years:</h3>
-  //     <ul>
-  //       <li>Timber attractive, but Exora already surpasses it in the 18% case.</li>
-  //       <li>Nifty provides stability but lower multiples.</li>
-  //     </ul>
-
-  //     <h3>30 Years:</h3>
-  //     <ul>
-  //       <li>Exora clearly dominates with 40–54×, beating both Nifty and timber.</li>
-  //       <li>Timber loses compounding edge.</li>
-  //       <li>Lifestyle remains weakest.</li>
-  //     </ul>
-
-  //     <h3>Suggested Allocation</h3>
-  //     <ul>
-  //       <li><strong>60% Exora Farms</strong></li>
-  //       <li><strong>25% Nifty / equities</strong></li>
-  //       <li><strong>15% Timber</strong> (optional, for risk-takers)</li>
-  //       <li><strong>Lifestyle farms</strong> only for those valuing eco-living.</li>
-  //     </ul>
-
-  //     <h2>Section 8: The Untapped Upside of Exora</h2>
-  //     <p>Our models are conservative. They do not include:</p>
-  //     <ul>
-  //       <li>Exports of premium fruits.</li>
-  //       <li>FMCG products (jams, juices, fruit derivatives).</li>
-  //       <li>Eco-tourism stays at biodiversity farms.</li>
-  //       <li>Curated fruit-tasting experiences.</li>
-  //     </ul>
-  //     <p>These will further boost dividends in real-world scenarios, widening the gap between Exora and other farmland options.</p>
-
-  //     <h2>Conclusion</h2>
-  //     <p>Across India's top metros, four farmland and equity models compete for investor capital:</p>
-  //     <ul>
-  //       <li><strong>Timber farming:</strong> Attractive at 15 years but fails long-term.</li>
-  //       <li><strong>Lifestyle farms:</strong> Emotional value, weak ROI.</li>
-  //       <li><strong>Nifty 50:</strong> Stable, liquid, and grows 30× in 30 years.</li>
-  //       <li><strong>Exora Farms:</strong> The only true cash-flow + compounding machine, reaching up to 54× over 30 years.</li>
-  //     </ul>
-
-  //     <p>And remember — Exora's additional product lines (exports, jams, juices, eco-stays) are not even factored in yet. With them, dividends and long-term wealth could exceed projections significantly.</p>
-
-  //     <p><strong>👉 Final Word:</strong> For investors seeking cash flows, inflation protection, and intergenerational wealth, Exora Farms is the superior choice compared to timber, lifestyle farms, and even equities at 12% CAGR.</p>
-  //   `,
-  //   author: 'Exora Farms Team',
-  //   date: '2025-01-31',
-  //   readTime: '12 min read',
-  //   category: 'Investment Analysis',
-  //   tags: [
-  //     'farmland investment',
-  //     'agricultural investment',
-  //     'wealth creation',
-  //     'investment comparison',
-  //     'exotic farming',
-  //     'timber plantation',
-  //     'lifestyle farms',
-  //     'nifty 50',
-  //     'portfolio allocation',
-  //     'long term investment',
-  //     'dividend investing',
-  //     'land appreciation',
-  //     'metro investment',
-  //     'bangalore investment',
-  //     'alternative investment',
-  //     'asset allocation',
-  //     'wealth compounding',
-  //     'agricultural returns',
-  //     'farmland returns',
-  //     'investment strategy'
-  //   ],
-  //   image: '/assets/blog/blog6.jpg',
-  //   featured: true,
-  //   trending: true,
-  //   seo: {
-  //     keywords: [
-  //       'farmland investment India',
-  //       'agricultural investment comparison',
-  //       'Exora Farms vs timber plantation',
-  //       'farmland vs Nifty 50 returns',
-  //       'exotic farming investment',
-  //       'bangalore farmland investment',
-  //       'mumbai agricultural investment',
-  //       'delhi farmland opportunities',
-  //       'hyderabad farm investment',
-  //       'chennai agricultural land',
-  //       'pune farmland investment',
-  //       'wealth creation through farming',
-  //       'dividend paying farmland',
-  //       'long term agricultural returns',
-  //       'alternative investment India',
-  //       'farmland portfolio allocation',
-  //       'agricultural asset class',
-  //       'farm investment strategy',
-  //       'land appreciation India',
-  //       'agricultural dividend income'
-  //     ],
-  //     canonicalUrl: '/blog/farmland-investment-india-metros-exora-farms-vs-timber-nifty'
-  //   }
-  // },
+      <h2>Conclusion</h2>
+      <p>Earning passive income from farmland in India is no longer a distant dream reserved for those with farming backgrounds. With managed farmland models like Exora Farms, anyone can invest in agricultural land, benefit from exotic crop cultivation, and enjoy tax-free recurring income — all without the hassles of active farming.</p>
+      <p>The combination of land appreciation, high-value crop returns, tax-free income, and professional farm management makes this one of the smartest passive income strategies available in India today. The earlier you invest, the sooner your farmland starts working for you.</p>
+    `,
+    author: 'Exora Farms Team',
+    date: '2026-03-28',
+    readTime: '6 min read',
+    category: 'Passive Income',
+    tags: ['Passive Income', 'Farmland Investment', 'Tax-Free Income', 'Managed Farmland', 'Exotic Farming', 'Wealth Creation', 'India'],
+    image: '/assets/blog/passive-income-farmland-india.png',
+    featured: true,
+    seo: {
+      keywords: ['passive income farmland India', 'earn from farmland', 'managed farmland investment', 'tax-free agriculture income', 'farmland passive income', 'exotic farming returns', 'farmland investment India'],
+      canonicalUrl: '/blog/passive-income-farmland-india'
+    }
+  },
 
 ];
 
