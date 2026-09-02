@@ -49,7 +49,15 @@ const InvestmentOverview = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="text-sm">1 Acre</span>
-                    <span className="font-bold text-green-600 text-base">₹33L</span>
+                    <span className="font-bold text-green-600 text-base bg-green-200/80 p-2 rounded-lg">On Request</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">2 Acre</span>
+                    <span className="font-bold text-green-600 text-base bg-green-200/80 p-2 rounded-lg">On Request</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">5 Acre</span>
+                    <span className="font-bold text-green-600 text-base bg-green-200/80 p-2 rounded-lg">On Request</span>
                   </div>
                   {/* <div className="flex justify-between items-center">
                     <span className="text-sm">2 acres</span>
